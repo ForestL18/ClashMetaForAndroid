@@ -48,11 +48,13 @@ jobs:
       #     echo "cat signing.properties"
       #     cat signing.properties
 
-      - name: Build
-        if: success()
+      - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-        with:
-          arguments: --no-daemon app:assembleMeta-AlphaRelease
+        if: success()
+
+      - name: Assemble the project
+        run: ./gradlew app:assembleMeta-AlphaRelease --no-daemon
+        if: success()
 
           
       - name: Upload Aritfact (universal)
