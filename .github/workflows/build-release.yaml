@@ -88,11 +88,13 @@ jobs:
           echo "cat signing.properties"
           cat signing.properties
 
-      - name: Release Build
-        if: success()
+      - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-        with:
-          arguments: --no-daemon app:assembleMetaRelease
+        if: success()
+
+      - name: Assemble the project
+        run: ./gradlew app:assembleMeta-AlphaRelease --no-daemon
+        if: success()
 
       - name: Tag Repo
         uses: richardsimko/update-tag@v1
