@@ -54,7 +54,7 @@ require (
 	github.com/mdlayher/socket v0.4.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20240320004321-933faba989ec // indirect
-	github.com/metacubex/quic-go v0.45.1-0.20240607133845-b24f02b35a22 // indirect
+	github.com/metacubex/quic-go v0.45.1-0.20240610004319-163fee60637e // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/sing-quic v0.0.0-20240518034124-7696d3f7da72 // indirect
 	github.com/metacubex/sing-shadowsocks v0.2.6 // indirect
