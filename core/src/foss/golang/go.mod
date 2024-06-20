@@ -52,9 +52,9 @@ require (
 	github.com/metacubex/sing-quic v0.0.0-20240518034124-7696d3f7da72 // indirect
 	github.com/metacubex/sing-shadowsocks v0.2.6 // indirect
 	github.com/metacubex/sing-shadowsocks2 v0.2.0 // indirect
-	github.com/metacubex/sing-tun v0.2.7-0.20240521155100-e8316a45a414 // indirect
+	github.com/metacubex/sing-tun v0.2.7-0.20240619023810-d442c40abab0 // indirect
 	github.com/metacubex/sing-vmess v0.1.9-0.20231207122118-72303677451f // indirect
-	github.com/metacubex/sing-wireguard v0.0.0-20240321042214-224f96122a63 // indirect
+	github.com/metacubex/sing-wireguard v0.0.0-20240618022557-a6efaa37127a // indirect
 	github.com/metacubex/tfo-go v0.0.0-20240228025757-be1269474a66 // indirect
 	github.com/metacubex/utls v1.6.6 // indirect
 	github.com/miekg/dns v1.1.59 // indirect
@@ -69,8 +69,9 @@ require (
 	github.com/quic-go/qpack v0.4.0 // indirect
 	github.com/quic-go/qtls-go1-20 v0.4.1 // indirect
 	github.com/sagernet/bbolt v0.0.0-20231014093535-ea5cb2fe9f0a // indirect
-	github.com/sagernet/netlink v0.0.0-20220905062125-8043b4a9aa97 // indirect
-	github.com/sagernet/sing v0.3.8 // indirect
+	github.com/sagernet/netlink v0.0.0-20240612041022-b9a21c07ac6a // indirect
+	github.com/sagernet/nftables v0.3.0-beta.4 // indirect
+	github.com/sagernet/sing v0.5.0-alpha.10 // indirect
 	github.com/sagernet/sing-mux v0.2.1-0.20240124034317-9bfb33698bb6 // indirect
 	github.com/sagernet/sing-shadowtls v0.1.4 // indirect
 	github.com/sagernet/smux v0.0.0-20231208180855-7041f6ea79e7 // indirect
@@ -85,28 +86,28 @@ require (
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/u-root/uio v0.0.0-20230220225925-ffce2a382923 // indirect
-	github.com/vishvananda/netns v0.0.0-20211101163701-50045581ed74 // indirect
+	github.com/vishvananda/netns v0.0.4 // indirect
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	gitlab.com/yawning/bsaes.git v0.0.0-20190805113838-0a714cd429ec // indirect
 	go.uber.org/mock v0.4.0 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
-	golang.org/x/crypto v0.23.0 // indirect
-	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
-	golang.org/x/mod v0.17.0 // indirect
-	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/crypto v0.24.0 // indirect
+	golang.org/x/exp v0.0.0-20240613232115-7f521ea00fb8 // indirect
+	golang.org/x/mod v0.18.0 // indirect
+	golang.org/x/net v0.26.0 // indirect
 	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.20.0 // indirect
-	golang.org/x/text v0.15.0 // indirect
+	golang.org/x/sys v0.21.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
-	golang.org/x/tools v0.21.0 // indirect
+	golang.org/x/tools v0.22.0 // indirect
 	google.golang.org/protobuf v1.34.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	lukechampine.com/blake3 v1.3.0 // indirect
 )
 
-replace github.com/sagernet/sing => github.com/metacubex/sing v0.0.0-20240518125217-e63d65a914d1
+replace github.com/sagernet/sing => github.com/metacubex/sing v0.0.0-20240617013425-3e3bd9dab6a2
 
 replace cfa => ../../main/golang
 
