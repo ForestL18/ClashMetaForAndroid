@@ -17,7 +17,6 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileOutputStream
 
-
 class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
     override suspend fun main() {
         val configuration = withClash { queryOverride(Clash.OverrideSlot.Persist) }
@@ -70,6 +69,12 @@ class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
                                 "*/*")
                             importGeoFile(uri, MetaFeatureSettingsDesign.Request.ImportCountry)
                         }
+                        MetaFeatureSettingsDesign.Request.ImportASN -> {
+                            val uri = startActivityForResult(
+                                ActivityResultContracts.GetContent(),
+                                "*/*")
+                            importGeoFile(uri, MetaFeatureSettingsDesign.Request.ImportASN)
+                        }
                     }
                 }
             }
@@ -88,7 +93,7 @@ class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
             if (it.moveToFirst()) {
                 val columnIndex = it.getColumnIndex(OpenableColumns.DISPLAY_NAME)
                 val displayName: String =
-                    if (columnIndex != -1) it.getString(columnIndex) else "";
+                    if (columnIndex != -1) it.getString(columnIndex) else ""
                 val ext = "." + displayName.substringAfterLast(".")
 
                 if (!validDatabaseExtensions.contains(ext)) {
@@ -107,11 +112,13 @@ class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
                         "geosite$ext"
                     MetaFeatureSettingsDesign.Request.ImportCountry ->
                         "country$ext"
+                    MetaFeatureSettingsDesign.Request.ImportASN ->
+                        "asn$ext"
                     else -> ""
                 }
 
                 withContext(Dispatchers.IO) {
-                    val outputFile = File(clashDir, outputFileName);
+                    val outputFile = File(clashDir, outputFileName)
                     contentResolver.openInputStream(uri).use { ins ->
                         FileOutputStream(outputFile).use { outs ->
                             ins?.copyTo(outs)
