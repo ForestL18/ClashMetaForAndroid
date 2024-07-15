@@ -242,6 +242,7 @@
     <string name="press_to_import">Press to import...</string>
     <string name="import_geosite_file">导入 GeoSite 数据库</string>
     <string name="import_country_file">导入 Country 数据库</string>
+    <string name="import_asn_file">导入 ASN 数据库</string>
     <string name="geofile_import_failed">导入失败</string>
     <string name="geofile_unknown_db_format">数据库类型错误</string>
     <string name="geofile_unknown_db_format_message">只支持 %1$s 格式的Geo数据库</string>
