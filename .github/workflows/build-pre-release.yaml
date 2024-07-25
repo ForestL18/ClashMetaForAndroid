@@ -1,13 +1,11 @@
-name: Build Pre-Release
+name: Build Debug
 on:
-  workflow_dispatch:
   pull_request:
-    branches: [main]
-    types: [closed]
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
 
 jobs:
-  BuildPreRelease:
-    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
+  BuildDebug:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -36,50 +34,63 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
 
-      - name: Signing properties
-        env:
-          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
-          SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
-          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-        run: |
-          touch signing.properties
-          echo keystore.password="$SIGNING_STORE_PASSWORD" > signing.properties
-          echo key.alias="$SIGNING_KEY_ALIAS" >> signing.properties
-          echo key.password="$SIGNING_KEY_PASSWORD" >> signing.properties
+      # - name: Signing properties
+      #   env:
+      #     SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
+      #     SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
+      #     SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+      #   run: |
+      #     touch signing.properties
+      #     echo keystore.password="$SIGNING_STORE_PASSWORD" > signing.properties
+      #     echo key.alias="$SIGNING_KEY_ALIAS" >> signing.properties
+      #     echo key.password="$SIGNING_KEY_PASSWORD" >> signing.properties
             
-          echo "cat signing.properties"
-          cat signing.properties
+      #     echo "cat signing.properties"
+      #     cat signing.properties
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+      - name: Build
         if: success()
-
-      - name: Assemble the project
-        run: ./gradlew app:assembleMeta-AlphaRelease --no-daemon
-        if: success()
-
-      # Delete old Prerelease-alpha
-      - uses: dev-drprasad/delete-tag-and-release@v1.1
+        uses: gradle/gradle-build-action@v3
         with:
-          tag_name: Prerelease-alpha
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          delete_release: true
+          arguments: --no-daemon app:assembleMeta-AlphaRelease
 
-      - name: Tag Repo
-        uses: richardsimko/update-tag@v1
-        with:
-          tag_name: Prerelease-alpha
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload Alpha
-        uses: softprops/action-gh-release@v2
+          
+      - name: Upload Aritfact (universal)
+        uses: actions/upload-artifact@v4
         if: ${{  success() }}
         with:
-          tag_name: Prerelease-alpha
-          files: app/build/outputs/apk/meta-alpha/release/*
-          prerelease: true
-          generate_release_notes: true
-
-      - name: Release Changelog Builder
-        uses: mikepenz/release-changelog-builder-action@v4
+          name: CMFA Debug Unsigned APK (universal) 
+          path: |
+            app/build/outputs/apk/meta-alpha/release/*-universal-*.apk
+      
+      - name: Upload Aritfact (arm64-v8a)
+        uses: actions/upload-artifact@v4
+        if: ${{  success() }}
+        with:
+          name: CMFA Debug Unsigned APK (arm64-v8a)
+          path: |
+            app/build/outputs/apk/meta-alpha/release/*-arm64-v8a-*.apk
+      
+      - name: Upload Aritfact (armeabi-v7a)
+        uses: actions/upload-artifact@v4
+        if: ${{  success() }}
+        with:
+          name: CMFA Debug Unsigned APK (armeabi-v7a)
+          path: |
+            app/build/outputs/apk/meta-alpha/release/*-armeabi-v7a-*.apk
+      
+      - name: Upload Aritfact (x86_64)
+        uses: actions/upload-artifact@v4
+        if: ${{  success() }}
+        with:
+          name: CMFA Debug Unsigned APK (x86_64)
+          path: |
+            app/build/outputs/apk/meta-alpha/release/*-x86_64-*.apk
+      
+      - name: Upload Aritfact (x86)
+        uses: actions/upload-artifact@v4
+        if: ${{  success() }}
+        with:
+          name: CMFA Debug Unsigned APK (x86)
+          path: |
+            app/build/outputs/apk/meta-alpha/release/*-x86-*.apk
