@@ -17,7 +17,6 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileOutputStream
 
-
 class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
     override suspend fun main() {
         val configuration = withClash { queryOverride(Clash.OverrideSlot.Persist) }
@@ -70,6 +69,12 @@ class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
                                 "*/*")
                             importGeoFile(uri, MetaFeatureSettingsDesign.Request.ImportCountry)
                         }
+                        MetaFeatureSettingsDesign.Request.ImportASN -> {
+                            val uri = startActivityForResult(
+                                ActivityResultContracts.GetContent(),
+                                "*/*")
+                            importGeoFile(uri, MetaFeatureSettingsDesign.Request.ImportASN)
+                        }
                     }
                 }
             }
@@ -107,6 +112,8 @@ class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
                         "geosite$ext"
                     MetaFeatureSettingsDesign.Request.ImportCountry ->
                         "country$ext"
+                    MetaFeatureSettingsDesign.Request.ImportASN ->
+                        "asn$ext"
                     else -> ""
                 }
 
