@@ -26,7 +26,7 @@ func QueryProviders() []*Provider {
 	r := tunnel.RuleProviders()
 	p := tunnel.Providers()
 
-	providers := make([]provider.Provider, 0, len(r)+len(p))
+	providers := make([]provider.Provider, 0, len(r)+p.Len())
 
 	for _, rule := range r {
 		if rule.VehicleType() == provider.Compatible {
@@ -36,13 +36,13 @@ func QueryProviders() []*Provider {
 		providers = append(providers, rule)
 	}
 
-	for _, proxy := range p {
-		if proxy.VehicleType() == provider.Compatible {
-			continue
-		}
-
-		providers = append(providers, proxy)
-	}
+	for pair := p.Oldest(); pair != nil; el = pair.Next() {
+            proxy := pair.Value
+            if proxy.VehicleType() == provider.Compatible {
+                continue
+            }
+            providers = append(providers, proxy)
+         }
 
 	result := make([]*Provider, 0, len(providers))
 
@@ -76,7 +76,7 @@ func UpdateProvider(t string, name string) error {
 
 		err = p.Update()
 	case "Proxy":
-		p := tunnel.Providers()[name]
+		p := tunnel.Providers().Get(name)
 		if p == nil {
 			return fmt.Errorf("%s not found", name)
 		}
