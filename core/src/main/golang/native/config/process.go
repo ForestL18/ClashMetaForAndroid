@@ -86,7 +86,7 @@ func patchProviders(cfg *config.RawConfig, profileDir string) error {
 }
 
 func validConfig(cfg *config.RawConfig, _ string) error {
-	if len(cfg.Proxy) == 0 && len(cfg.ProxyProvider) == 0 {
+	if len(cfg.Proxy) == 0 && cfg.ProxyProvider.Len() == 0 {
 		return errors.New("profile does not contain `proxies` or `proxy-providers`")
 	}
 
