@@ -41,17 +41,17 @@ class MainApplication : Application() {
     private fun extractGeoFiles() {
         clashDir.mkdirs();
         
-        val geoipFile = File(clashDir, "country.mmdb")
-        if(!geoipFile.exists()) {
-            FileOutputStream(geoipFile).use {
-                assets.open("country.mmdb").copyTo(it);
-            }
-        }
-        
         val geositeFile = File(clashDir, "geosite.dat")
         if(!geositeFile.exists()) {
             FileOutputStream(geositeFile).use {
                 assets.open("geosite.dat").copyTo(it);
+            }
+        }
+
+        val geoipFile = File(clashDir, "country.mmdb")
+        if(!geoipFile.exists()) {
+            FileOutputStream(geoipFile).use {
+                assets.open("country.mmdb").copyTo(it);
             }
         }
         
