@@ -41,10 +41,10 @@ class MainApplication : Application() {
     private fun extractGeoFiles() {
         clashDir.mkdirs();
 
-        val geoipFile = File(clashDir, "geoip.metadb")
+        val geoipFile = File(clashDir, "ASN.mmdb")
         if(!geoipFile.exists()) {
             FileOutputStream(geoipFile).use {
-                assets.open("geoip.metadb").copyTo(it);
+                assets.open("ASN.mmdb").copyTo(it);
             }
         }
 
