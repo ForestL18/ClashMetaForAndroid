@@ -55,9 +55,9 @@ class MainApplication : Application() {
             }
         }
         
-        val geoipFile = File(clashDir, "ASN.mmdb")
-        if(!geoipFile.exists()) {
-            FileOutputStream(geoipFile).use {
+        val ASNFile = File(clashDir, "ASN.mmdb")
+        if(!ASNFile.exists()) {
+            FileOutputStream(ASNFile).use {
                 assets.open("ASN.mmdb").copyTo(it);
             }
         }
