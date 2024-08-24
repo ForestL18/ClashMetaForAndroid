@@ -113,7 +113,7 @@ class MetaFeatureSettingsActivity : BaseActivity<MetaFeatureSettingsDesign>() {
                     MetaFeatureSettingsDesign.Request.ImportCountry ->
                         "country$ext"
                     MetaFeatureSettingsDesign.Request.ImportASN ->
-                        "asn$ext"
+                        "ASN$ext"
                     else -> ""
                 }
 
