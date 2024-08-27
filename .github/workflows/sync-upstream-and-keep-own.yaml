@@ -20,6 +20,7 @@ jobs:
           git config user.email 'actions@github.com'
           git config core.attributesfile .gitattributes
           git config merge.ours.driver true
+          git config submodule.core/src/foss/golang/clash.ignore all
 
       - name: Fetch Upstream
         run: |
