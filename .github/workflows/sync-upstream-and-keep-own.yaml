@@ -1,8 +1,6 @@
 name: Sync Upstream and Keep Own
 on:
-  #schedule:
-    #- cron: "0 17 * * *" # 每天运行一次 UTC+8 AM
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   sync-upstream:
@@ -24,7 +22,7 @@ jobs:
       - name: Fetch Upstream
         run: |
           git remote add upstream https://github.com/MetaCubeX/ClashMetaForAndroid.git
-          git fetch upstream
+          git fetch upstream main
 
       - name: Merge Upstream
         run: |
@@ -34,18 +32,29 @@ jobs:
           git checkout -- .github/workflows/
           git clean -fd .github/workflows/
           
-          # 忽略所有子模块的更改
-          git submodule foreach --recursive 'git reset --hard HEAD'
+          # 更新并合并子模块
+          git submodule update --init --recursive
+          git submodule foreach --recursive '
+            git fetch origin main
+            CURRENT_COMMIT=$(git rev-parse HEAD)
+            UPSTREAM_COMMIT=$(git rev-parse origin/main)
+            if [ "$CURRENT_COMMIT" != "$UPSTREAM_COMMIT" ]; then
+              git merge $UPSTREAM_COMMIT || true
+              git add .
+              git commit -m "Merge upstream main changes for submodule" || true
+            fi
+          '
+          
           git add .
           git status
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          title: "Sync upstream changes"
+          title: "Sync upstream main changes including submodules"
           body: |
-            This PR syncs changes from the upstream repository.
+            This PR syncs changes from the upstream main branch.
             While preserving our local modifications as specified in .gitattributes.
-            All submodule changes have been ignored.
+            Submodules have been updated to their latest main branch commits.
           branch: sync-upstream-and-keep-own
           base: main
