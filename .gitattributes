@@ -2,3 +2,13 @@
 
 *.bat text eol=crlf
 *.jar binary
+
+.gitattributes merge=ours
+.github/workflows/* merge=ours
+app/src/main/java/com/github/kr328/clash/MainApplication.kt merge=ours
+app/src/main/java/com/github/kr328/clash/BaseActivity.kt merge=ours
+app/src/main/java/com/github/kr328/clash/MetaFeatureSettingsActivity.kt merge=ours
+design/src/main/java/com/github/kr328/clash/design/MetaFeatureSettingsDesign.kt merge=ours
+design/src/main/res/values/strings.xml merge=ours
+app/build.gradle.kts merge=ours
+release.keystore merge=ours
