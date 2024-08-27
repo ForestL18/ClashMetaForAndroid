@@ -1,6 +1,8 @@
 name: Sync Upstream and Keep Own
 on:
-  workflow_dispatch:
+  #schedule:
+  #- cron: "0 17 * * *" # 每天运行一次 UTC+8 AM
+  workflow_dispatch: # 允许手动触发
 
 jobs:
   sync-upstream:
@@ -10,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: 'recursive'
+          submodules: "recursive"
 
       - name: Configure Git
         run: |
@@ -31,20 +33,9 @@ jobs:
           git reset HEAD .github/workflows/
           git checkout -- .github/workflows/
           git clean -fd .github/workflows/
-          
-          # 更新并合并子模块
-          git submodule update --init --recursive
-          git submodule foreach --recursive '
-            git fetch origin Alpha
-            CURRENT_COMMIT=$(git rev-parse HEAD)
-            UPSTREAM_COMMIT=$(git rev-parse FETCH_HEAD)
-            if [ "$CURRENT_COMMIT" != "$UPSTREAM_COMMIT" ]; then
-              git merge FETCH_HEAD --allow-unrelated-histories || true
-              git add .
-              git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "Merge upstream main changes for submodule" || true
-            fi
-          '
-          
+
+          # 忽略所有子模块的更改
+          git submodule foreach --recursive 'git reset --hard HEAD'
           git add .
           git status
 
@@ -53,8 +44,10 @@ jobs:
         with:
           title: "Sync upstream and keep own"
           body: |
-            This PR syncs changes from the upstream main branch.
+            This PR syncs changes from the upstream repository.
+            
             While preserving our local modifications as specified in .gitattributes.
-            Submodules have been updated to their latest main branch commits.
+            
+            All submodule changes have been ignored.
           branch: sync-upstream-and-keep-own
           base: main
