@@ -1,5 +1,4 @@
 name: Sync Upstream and Keep Own
-
 on:
   #schedule:
     #- cron: "0 17 * * *" # 每天运行一次 UTC+8 AM
@@ -13,6 +12,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: 'recursive'
 
       - name: Configure Git
         run: |
@@ -20,14 +20,12 @@ jobs:
           git config user.email 'actions@github.com'
           git config core.attributesfile .gitattributes
           git config merge.ours.driver true
-          git config submodule.core/src/foss/golang/clash.ignore all
 
       - name: Fetch Upstream
         run: |
           git remote add upstream https://github.com/MetaCubeX/ClashMetaForAndroid.git
           git fetch upstream
 
-      # respect .gitattribute
       - name: Merge Upstream
         run: |
           git check-attr -a app/build.gradle.kts
@@ -35,6 +33,10 @@ jobs:
           git reset HEAD .github/workflows/
           git checkout -- .github/workflows/
           git clean -fd .github/workflows/
+          
+          # 忽略所有子模块的更改
+          git submodule foreach --recursive 'git reset --hard HEAD'
+          git add .
           git status
 
       - name: Create Pull Request
@@ -43,7 +45,7 @@ jobs:
           title: "Sync upstream changes"
           body: |
             This PR syncs changes from the upstream repository.
-
             While preserving our local modifications as specified in .gitattributes.
+            All submodule changes have been ignored.
           branch: sync-upstream-and-keep-own
           base: main
