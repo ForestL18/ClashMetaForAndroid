@@ -45,9 +45,10 @@ jobs:
           title: "Sync upstream and keep own"
           body: |
             This PR syncs changes from the upstream repository.
-            
+
             While preserving our local modifications as specified in .gitattributes.
-            
+
             All submodule changes have been ignored.
           branch: sync-upstream-and-keep-own
           base: main
+          delete-branch: true
