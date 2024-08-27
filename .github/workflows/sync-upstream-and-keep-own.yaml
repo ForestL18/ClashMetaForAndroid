@@ -51,9 +51,9 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          title: "Sync upstream main changes including submodules"
+          title: "Sync upstream main changes including submodules and keep own"
           body: |
-            This PR syncs changes from the upstream main branch.
+            This PR syncs changes from the upstream main branch and keep own.
             While preserving our local modifications as specified in .gitattributes.
             Submodules have been updated to their latest main branch commits.
           branch: sync-upstream-and-keep-own
