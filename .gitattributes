@@ -4,7 +4,6 @@
 *.jar binary
 
 .gitattributes merge=ours
-core/src/foss/golang/clash/** merge=ours
 .github/workflows/* merge=ours
 app/src/main/java/com/github/kr328/clash/MainApplication.kt merge=ours
 app/src/main/java/com/github/kr328/clash/BaseActivity.kt merge=ours
