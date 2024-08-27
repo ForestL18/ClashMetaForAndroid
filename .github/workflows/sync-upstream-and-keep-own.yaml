@@ -1,0 +1,48 @@
+name: Sync Upstream and Keep Own
+
+on:
+  #schedule:
+    #- cron: "0 17 * * *" # 每天运行一次 UTC+8 AM
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name 'GitHub Actions'
+          git config user.email 'actions@github.com'
+          git config core.attributesfile .gitattributes
+          git config merge.ours.driver true
+
+      - name: Fetch Upstream
+        run: |
+          git remote add upstream https://github.com/MetaCubeX/ClashMetaForAndroid.git
+          git fetch upstream
+
+      # respect .gitattribute
+      - name: Merge Upstream
+        run: |
+          git check-attr -a app/build.gradle.kts
+          git merge -X theirs --no-commit --no-ff upstream/main || true
+          git reset HEAD .github/workflows/
+          git checkout -- .github/workflows/
+          git clean -fd .github/workflows/
+          git status
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "Sync upstream changes"
+          body: |
+            This PR syncs changes from the upstream repository.
+
+            While preserving our local modifications as specified in .gitattributes.
+          branch: sync-upstream-and-keep-own
+          base: main
