@@ -12,8 +12,3 @@ design/src/main/java/com/github/kr328/clash/design/MetaFeatureSettingsDesign.kt 
 design/src/main/res/values/strings.xml merge=ours
 app/build.gradle.kts merge=ours
 release.keystore merge=ours
-
-core/src/foss/golang/go.mod merge=ours
-core/src/foss/golang/go.sum merge=ours
-core/src/main/golang/go.mod merge=ours
-core/src/main/golang/go.sum merge=ours
