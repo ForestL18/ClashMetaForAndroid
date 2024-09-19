@@ -1,11 +1,10 @@
 name: Build Debug
 on:
   pull_request:
-    types: [opened]
-  workflow_dispatch:
-  push:
+    types: [opened, synchronize, reopened]
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   BuildDebug:
