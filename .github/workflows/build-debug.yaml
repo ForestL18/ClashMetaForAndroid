@@ -1,7 +1,7 @@
 name: Build Debug
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [opened]
   workflow_dispatch:
   push:
     branches:
