@@ -63,7 +63,7 @@ require (
 	github.com/metacubex/sing-shadowsocks2 v0.2.2 // indirect
 	github.com/metacubex/sing-tun v0.2.7-0.20240729131039-ed03f557dee1 // indirect
 	github.com/metacubex/sing-vmess v0.1.9-0.20240719134745-1df6fb20bbf9 // indirect
-	github.com/metacubex/sing-wireguard v0.0.0-20240922131718-0f10c39a5531 // indirect
+	github.com/metacubex/sing-wireguard v0.0.0-20240924052438-b0976fc59ea3 // indirect
 	github.com/metacubex/tfo-go v0.0.0-20240830120620-c5e019b67785 // indirect
 	github.com/metacubex/utls v1.6.6 // indirect
 	github.com/metacubex/wireguard-go v0.0.0-20240922131502-c182e7471181 // indirect
@@ -96,6 +96,8 @@ require (
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/u-root/uio v0.0.0-20230220225925-ffce2a382923 // indirect
 	github.com/vishvananda/netns v0.0.4 // indirect
+	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
+	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	gitlab.com/go-extension/aes-ccm v0.0.0-20230221065045-e58665ef23c7 // indirect

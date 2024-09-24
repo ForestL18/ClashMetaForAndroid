@@ -118,8 +118,8 @@ github.com/metacubex/sing-tun v0.2.7-0.20240729131039-ed03f557dee1 h1:ypfofGDZbP
 github.com/metacubex/sing-tun v0.2.7-0.20240729131039-ed03f557dee1/go.mod h1:olbEx9yVcaw5tHTNlRamRoxmMKcvDvcVS1YLnQGzvWE=
 github.com/metacubex/sing-vmess v0.1.9-0.20240719134745-1df6fb20bbf9 h1:OAXiCosqY8xKDp3pqTW3qbrCprZ1l6WkrXSFSCwyY4I=
 github.com/metacubex/sing-vmess v0.1.9-0.20240719134745-1df6fb20bbf9/go.mod h1:olVkD4FChQ5gKMHG4ZzuD7+fMkJY1G8vwOKpRehjrmY=
-github.com/metacubex/sing-wireguard v0.0.0-20240922131718-0f10c39a5531 h1:BoIL2fZZTPzvSxuhng9kWwvUZ8fiMJyrWbgdHIX0CDs=
-github.com/metacubex/sing-wireguard v0.0.0-20240922131718-0f10c39a5531/go.mod h1:6nitcmzPDL3MXnLdhu6Hm126Zk4S1fBbX3P7jxUxSFw=
+github.com/metacubex/sing-wireguard v0.0.0-20240924052438-b0976fc59ea3 h1:xg71VmzLS6ByAzi/57phwDvjE+dLLs+ozH00k4DnOns=
+github.com/metacubex/sing-wireguard v0.0.0-20240924052438-b0976fc59ea3/go.mod h1:6nitcmzPDL3MXnLdhu6Hm126Zk4S1fBbX3P7jxUxSFw=
 github.com/metacubex/tfo-go v0.0.0-20240830120620-c5e019b67785 h1:NNmI+ZV0DzNuqaAInRQuZFLHlWVuyHeow8jYpdKjHjo=
 github.com/metacubex/tfo-go v0.0.0-20240830120620-c5e019b67785/go.mod h1:c7bVFM9f5+VzeZ/6Kg77T/jrg1Xp8QpqlSHvG/aXVts=
 github.com/metacubex/utls v1.6.6 h1:3D12YKHTf2Z41UPhQU2dWerNWJ5TVQD9gKoQ+H+iLC8=
@@ -205,6 +205,10 @@ github.com/vishvananda/netns v0.0.0-20191106174202-0a2b9b5464df/go.mod h1:JP3t17
 github.com/vishvananda/netns v0.0.0-20210104183010-2eb08e3e575f/go.mod h1:DD4vA1DwXk04H54A1oHXtwZmA0grkVMdPxx/VGLCah0=
 github.com/vishvananda/netns v0.0.4 h1:Oeaw1EM2JMxD51g9uhtC0D7erkIjgmj8+JZc26m1YX8=
 github.com/vishvananda/netns v0.0.4/go.mod h1:SpkAiCQRtJ6TvvxPnOSyH3BMl6unz3xZlaprSwhNNJM=
+github.com/vmihailenco/msgpack/v5 v5.4.1 h1:cQriyiUvjTwOHg8QZaPihLWeRAAVoCpE00IUPn0Bjt8=
+github.com/vmihailenco/msgpack/v5 v5.4.1/go.mod h1:GaZTsDaehaPpQVyxrf5mtQlH+pc21PIudVV/E3rRQok=
+github.com/vmihailenco/tagparser/v2 v2.0.0 h1:y09buUbR+b5aycVFQs/g70pqKVZNBmxwAhO7/IwNM9g=
+github.com/vmihailenco/tagparser/v2 v2.0.0/go.mod h1:Wri+At7QHww0WTrCBeu4J6bNtoV6mEfg5OIWRZA9qds=
 github.com/wk8/go-ordered-map/v2 v2.1.8 h1:5h/BUHu93oj4gIdvHHHGsScSTMijfx5PeYkE/fJgbpc=
 github.com/wk8/go-ordered-map/v2 v2.1.8/go.mod h1:5nJHM5DyteebpVlHnWMV0rPz6Zp7+xBAnxjb1X5vnTw=
 github.com/yusufpapurcu/wmi v1.2.4 h1:zFUKzehAFReQwLys1b/iSMl+JQGSCSjtVqQn9bBrPo0=
