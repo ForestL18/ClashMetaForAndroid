@@ -94,7 +94,9 @@ jobs:
 
       - name: Release Build
         if: success()
-        run: ./gradlew --no-daemon app:assembleMetaRelease
+        run: |
+          ./gradlew clean
+          ./gradlew --no-daemon app:assembleMetaRelease
 
       - name: Tag Repo
         uses: richardsimko/update-tag@v1
