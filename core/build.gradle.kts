@@ -46,6 +46,12 @@ android {
             path = file("src/main/cpp/CMakeLists.txt")
         }
     }
+
+    defaultConfig {
+        ndk {
+            abiFilters("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+        }
+    }
 }
 
 dependencies {
