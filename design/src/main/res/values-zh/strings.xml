@@ -134,8 +134,8 @@
     <string name="blacklist">黑名单</string>
     <string name="whitelist">白名单</string>
     <string name="off">关闭</string>
-    <string name="strict">自动</string>
-    <string name="always">开启</string>
+    <string name="strict">严格</string>
+    <string name="always">强制开启</string>
     <string name="sort">排序</string>
     <string name="layout">布局</string>
     <string name="single">单列</string>
