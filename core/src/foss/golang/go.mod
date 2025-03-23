@@ -16,7 +16,7 @@ require (
 	github.com/coreos/go-iptables v0.8.0 // indirect
 	github.com/dlclark/regexp2 v1.11.5 // indirect
 	github.com/ebitengine/purego v0.8.2 // indirect
-	github.com/enfein/mieru/v3 v3.12.0 // indirect
+	github.com/enfein/mieru/v3 v3.13.0 // indirect
 	github.com/ericlagergren/aegis v0.0.0-20230312195928-b4ce538b56f9 // indirect
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
