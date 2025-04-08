@@ -56,6 +56,11 @@ class ServiceStore(context: Context) {
         defaultValue = false
     )
 
+    var endpointIndependentNat by store.boolean(
+        key = "endpoint_independent_nat",
+        defaultValue = false
+    )
+
     var tunStackMode by store.string(
         key = "tun_stack_mode",
         defaultValue = "system"

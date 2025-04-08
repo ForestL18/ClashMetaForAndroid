@@ -241,9 +241,12 @@
     <string name="always_light">Always Light</string>
 
     <string name="tun_stack_mode">Stack Mode</string>
+    <string name="tun_stack_mode_summary">Legacy Stack</string>
     <string name="tun_stack_system">System Stack</string>
     <string name="tun_stack_gvisor">Gvisor Stack</string>
     <string name="tun_stack_mixed">Mixed Stack</string>
+    <string name="endpoint_independent_nat">Endpoint Independent NAT</string>
+    <string name="endpoint_independent_nat_summary">Only available on the Mixed/Gvisor stack</string>
 
     <string name="allow_all_apps">Allow all apps</string>
     <string name="allow_selected_apps">Allow selected apps</string>

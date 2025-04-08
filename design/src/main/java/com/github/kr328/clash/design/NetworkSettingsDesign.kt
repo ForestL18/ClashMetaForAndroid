@@ -93,6 +93,13 @@ class NetworkSettingsDesign(
                 )
             }
 
+            switch(
+                value = srvStore::endpointIndependentNat,
+                title = R.string.endpoint_independent_nat,
+                summary = R.string.endpoint_independent_nat_summary,
+                configure = vpnDependencies::add,
+            )
+
             selectableList(
                 value = srvStore::tunStackMode,
                 values = arrayOf(
