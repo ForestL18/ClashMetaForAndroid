@@ -1,4 +1,4 @@
-name: delete-workflow-runs
+name: Delete old workflow runs
 
 on:
   workflow_dispatch:

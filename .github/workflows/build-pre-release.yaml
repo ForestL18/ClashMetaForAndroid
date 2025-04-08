@@ -2,7 +2,7 @@ name: Build Pre-Release
 on:
   workflow_dispatch:
   pull_request:
-    branches: [main]
+    branches: [beta]
     types: [closed]
 
 jobs:
