@@ -1,9 +1,9 @@
 name: Update Clash-Core and Go Modules
 on:
+  workflow_dispatch:
   repository_dispatch:
     types:
       - core-updated
-  workflow_dispatch:
 
 jobs:
   update-dependencies:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      
+
       - name: Checkout and Update submodules
         run: git submodule update --init --recursive --remote --force
 
@@ -26,7 +26,7 @@ jobs:
         with:
           go-version: "1.24"
           check-latest: true
-      
+
       - uses: actions/cache@v4
         with:
           path: |
@@ -66,17 +66,16 @@ jobs:
           commit-message: Update Dependencies
           branch: update-dependencies
           delete-branch: true
-          title: 'Update Dependencies'
+          title: "Update Dependencies"
           draft: false
           body: |
             - Update Clash-Meta Core
             - Update Go Module Dependecies
           labels: |
             Update
-        
+
       - name: PR result
         if: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
-      
