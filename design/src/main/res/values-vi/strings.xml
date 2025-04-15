@@ -5,7 +5,7 @@
     <string name="toast_profile_updated_failed">Cập nhật không thành công %1$s %2$s</string>
     <string name="press_to_import">Chạm để nhập...</string>
     <string name="meta_features">Tính năng của Clash Meta</string>
-    <string name="allow_ipv6">Cho phép Ipv6</string>
+    <string name="allow_ipv6">Cho phép IPv6</string>
     <string name="allow_ipv6_summary">Cho phép lưu lượng ipv6 qua hệ thống Vpn</string>
     <string name="tun_stack_gvisor">Gvisor</string>
     <string name="tun_stack_mixed">Mixed</string>
