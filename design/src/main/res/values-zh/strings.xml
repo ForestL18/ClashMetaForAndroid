@@ -229,7 +229,6 @@
     <string name="find_process_mode">查找进程模式</string>
     <string name="sniffer_setting">嗅探设置</string>
     <string name="sniffer">嗅探器</string>
-    <string name="sniff">嗅探</string>
     <string name="force_dns_mapping">强制 DNS 映射</string>
     <string name="parse_pure_ip">解析纯 IP 连接</string>
     <string name="override_destination">覆盖目标地址</string>
@@ -237,6 +236,12 @@
     <string name="skip_domain">跳过域名</string>
     <string name="skip_src_address">跳过源 IP</string>
     <string name="skip_dst_address">跳过目标 IP</string>
+    <string name="sniff_http_ports">嗅探 HTTP 端口</string>
+    <string name="sniff_tls_ports">嗅探 TLS 端口</string>
+    <string name="sniff_quic_ports">嗅探 QUIC 端口</string>
+    <string name="sniff_http_override_destination">嗅探 HTTP 覆盖目标地址</string>
+    <string name="sniff_tls_override_destination">嗅探 TLS 覆盖目标地址</string>
+    <string name="sniff_quic_override_destination">嗅探 QUIC 覆盖目标地址</string>
     <string name="geox_url_setting">GeoX 链接设置</string>
     <string name="geox_geoip">GeoIp 链接</string>
     <string name="geox_mmdb">MMDB 链接</string>
@@ -257,4 +262,10 @@
     <string name="external_control_activity">外部控制</string>
     <string name="external_control_started">Clash.Meta 服务已启动</string>
     <string name="external_control_stopped">Clash.Meta 服务已停止</string>
+    <string name="tun_stack_mode">堆栈模式</string>
+    <string name="tun_stack_system">System 堆栈</string>
+    <string name="tun_stack_gvisor">Gvisor 堆栈</string>
+    <string name="tun_stack_mixed">Mixed 堆栈</string>
+    <string name="endpoint_independent_nat">端点无关 NAT</string>
+    <string name="endpoint_independent_nat_summary">仅 Mixed/Gvisor 堆栈可用</string>
 </resources>
