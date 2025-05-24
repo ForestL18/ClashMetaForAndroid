@@ -1,7 +1,6 @@
 package main
 
 //#include "bridge.h"
-//#include <stdbool.h>
 import "C"
 
 import (
@@ -65,7 +64,7 @@ func (t *remoteTun) close() {
 }
 
 //export startTun
-func startTun(fd C.int, stack, gateway, portal, dns C.c_string, endpointIndependentNat C._Bool, callback unsafe.Pointer) C.int {
+func startTun(fd C.int, stack, gateway, portal, dns C.c_string, callback unsafe.Pointer) C.int {
 	rTunLock.Lock()
 	defer rTunLock.Unlock()
 
@@ -79,13 +78,12 @@ func startTun(fd C.int, stack, gateway, portal, dns C.c_string, endpointIndepend
 	g := C.GoString(gateway)
 	p := C.GoString(portal)
 	d := C.GoString(dns)
-	e := bool(endpointIndependentNat)
 
 	remote := &remoteTun{callback: callback, closed: false, limit: semaphore.NewWeighted(4)}
 
 	app.ApplyTunContext(remote.markSocket, remote.querySocketUid)
 
-	closer, err := tun.Start(f, s, g, p, d, e)
+	closer, err := tun.Start(f, s, g, p, d)
 	if err != nil {
 		remote.close()
 
