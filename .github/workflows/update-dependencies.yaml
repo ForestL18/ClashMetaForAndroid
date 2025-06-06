@@ -13,7 +13,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Checkout and Update submodules
-        run: git submodule update --init --recursive --remote --force
+        run: |
+          git submodule update --init --recursive --remote --force
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -44,12 +45,16 @@ jobs:
         run: |
           cd ${{ github.workspace }}/core/src/foss/golang/
           update-go-mod-replace ${{ github.workspace }}/core/src/foss/golang/clash/go.mod $(pwd)/go.mod
+          go mod edit -droprequire github.com/metacubex/mihomo
+          go get github.com/metacubex/mihomo@Alpha
           go mod tidy
 
       - name: Update Main Gomod
         run: |
           cd ${{ github.workspace }}/core/src/main/golang/
           update-go-mod-replace ${{ github.workspace }}/core/src/foss/golang/clash/go.mod $(pwd)/go.mod
+          go mod edit -droprequire github.com/metacubex/mihomo
+          go get github.com/metacubex/mihomo@Alpha
           go mod tidy
 
       - uses: tibdex/github-app-token@v2
