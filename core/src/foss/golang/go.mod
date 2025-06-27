@@ -51,7 +51,7 @@ require (
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20250324165734-5857f47bd43b // indirect
-	github.com/metacubex/mihomo v1.19.12-0.20250625144900-6a9d42899122 // indirect
+	github.com/metacubex/mihomo v1.19.12-0.20250627085631-0d92b6724b87 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/quic-go v0.52.1-0.20250522021943-aef454b9e639 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
