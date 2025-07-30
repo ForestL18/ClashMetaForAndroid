@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.11.5
-	github.com/metacubex/mihomo v1.19.13-0.20250730095011-00035302a1fa
+	github.com/metacubex/mihomo v1.19.13-0.20250730114536-f04af734e3ab
 	golang.org/x/sync v0.11.0
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -59,7 +59,7 @@ require (
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20250324165734-5857f47bd43b // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
-	github.com/metacubex/quic-go v0.53.1-0.20250628094454-fda5262d1d9c // indirect
+	github.com/metacubex/quic-go v0.54.1-0.20250730114134-a1ae705fe295 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/sing v0.5.4 // indirect
 	github.com/metacubex/sing-mux v0.3.2 // indirect
