@@ -40,7 +40,7 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mdlayher/netlink v1.7.2 // indirect
 	github.com/mdlayher/socket v0.4.1 // indirect
-	github.com/metacubex/amneziawg-go v0.0.0-20240922133038-fdf3a4d5a4ab // indirect
+	github.com/metacubex/amneziawg-go v0.0.0-20250820070344-732c0c9d418a // indirect
 	github.com/metacubex/ascon v0.1.0 // indirect
 	github.com/metacubex/bart v0.20.5 // indirect
 	github.com/metacubex/bbolt v0.0.0-20250725135710-010dbbbb7a5b // indirect
@@ -49,7 +49,7 @@ require (
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20250324165734-5857f47bd43b // indirect
-	github.com/metacubex/mihomo v1.19.13-0.20250819085635-930c70f0656b // indirect
+	github.com/metacubex/mihomo v1.19.13-0.20250820074204-5f09db265556 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/quic-go v0.54.1-0.20250730114134-a1ae705fe295 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
@@ -61,12 +61,12 @@ require (
 	github.com/metacubex/sing-shadowsocks2 v0.2.6 // indirect
 	github.com/metacubex/sing-shadowtls v0.0.0-20250503063515-5d9f966d17a2 // indirect
 	github.com/metacubex/sing-tun v0.4.7 // indirect
-	github.com/metacubex/sing-vmess v0.2.4-0.20250817075824-5e05f123ccdd // indirect
+	github.com/metacubex/sing-vmess v0.2.4-0.20250819151326-51d195aac5db // indirect
 	github.com/metacubex/sing-wireguard v0.0.0-20250503063753-2dc62acc626f // indirect
 	github.com/metacubex/smux v0.0.0-20250503055512-501391591dee // indirect
 	github.com/metacubex/tfo-go v0.0.0-20250516165257-e29c16ae41d4 // indirect
 	github.com/metacubex/utls v1.8.1-0.20250811145843-49b4f106169a // indirect
-	github.com/metacubex/wireguard-go v0.0.0-20240922131502-c182e7471181 // indirect
+	github.com/metacubex/wireguard-go v0.0.0-20250820062549-a6cecdd7f57f // indirect
 	github.com/miekg/dns v1.1.63 // indirect
 	github.com/mroth/weightedrand/v2 v2.1.0 // indirect
 	github.com/oasisprotocol/deoxysii v0.0.0-20220228165953-2091330c22b7 // indirect
