@@ -49,7 +49,7 @@ require (
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20250324165734-5857f47bd43b // indirect
-	github.com/metacubex/mihomo v1.19.13-0.20250820074204-5f09db265556 // indirect
+	github.com/metacubex/mihomo v1.19.13-0.20250821032541-e4dfe0974499 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/quic-go v0.54.1-0.20250730114134-a1ae705fe295 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
@@ -61,7 +61,7 @@ require (
 	github.com/metacubex/sing-shadowsocks2 v0.2.6 // indirect
 	github.com/metacubex/sing-shadowtls v0.0.0-20250503063515-5d9f966d17a2 // indirect
 	github.com/metacubex/sing-tun v0.4.7 // indirect
-	github.com/metacubex/sing-vmess v0.2.4-0.20250819151326-51d195aac5db // indirect
+	github.com/metacubex/sing-vmess v0.2.4-0.20250821024956-97839f31a65d // indirect
 	github.com/metacubex/sing-wireguard v0.0.0-20250503063753-2dc62acc626f // indirect
 	github.com/metacubex/smux v0.0.0-20250503055512-501391591dee // indirect
 	github.com/metacubex/tfo-go v0.0.0-20250516165257-e29c16ae41d4 // indirect
