@@ -88,8 +88,8 @@ github.com/mdlayher/netlink v1.7.2 h1:/UtM3ofJap7Vl4QWCPDGXY8d3GIY2UGSDbK+QWmY8/
 github.com/mdlayher/netlink v1.7.2/go.mod h1:xraEF7uJbxLhc5fpHL4cPe221LI2bdttWlU+ZGLfQSw=
 github.com/mdlayher/socket v0.4.1 h1:eM9y2/jlbs1M615oshPQOHZzj6R6wMT7bX5NPiQvn2U=
 github.com/mdlayher/socket v0.4.1/go.mod h1:cAqeGjoufqdxWkD7DkpyS+wcefOtmu5OQ8KuoJGIReA=
-github.com/metacubex/amneziawg-go v0.0.0-20250820070344-732c0c9d418a h1:c1QSGpacSeQdBdWcEKZKGuWLcqIG2wxHEygAcXuDwS4=
-github.com/metacubex/amneziawg-go v0.0.0-20250820070344-732c0c9d418a/go.mod h1:MsM/5czONyXMJ3PRr5DbQ4O/BxzAnJWOIcJdLzW6qHY=
+github.com/metacubex/amneziawg-go v0.0.0-20250902133113-a7f637c14281 h1:09EM0sOLb2kfL0KETGhHujsBLB5iy5U/2yHRHsxf/pI=
+github.com/metacubex/amneziawg-go v0.0.0-20250902133113-a7f637c14281/go.mod h1:MsM/5czONyXMJ3PRr5DbQ4O/BxzAnJWOIcJdLzW6qHY=
 github.com/metacubex/ascon v0.1.0 h1:6ZWxmXYszT1XXtwkf6nxfFhc/OTtQ9R3Vyj1jN32lGM=
 github.com/metacubex/ascon v0.1.0/go.mod h1:eV5oim4cVPPdEL8/EYaTZ0iIKARH9pnhAK/fcT5Kacc=
 github.com/metacubex/bart v0.20.5 h1:XkgLZ17QxfxkqKdGsojoM2Zu01mmHyyQSFzt2/calTM=
@@ -115,8 +115,8 @@ github.com/metacubex/randv2 v0.2.0/go.mod h1:kFi2SzrQ5WuneuoLLCMkABtiBu6VRrMrWFq
 github.com/metacubex/restls-client-go v0.1.7 h1:eCwiXCTQb5WJu9IlgYvDBA1OgrINv58dEe7hcN5H15k=
 github.com/metacubex/restls-client-go v0.1.7/go.mod h1:BN/U52vPw7j8VTSh2vleD/MnmVKCov84mS5VcjVHH4g=
 github.com/metacubex/sing v0.5.2/go.mod h1:ypf0mjwlZm0sKdQSY+yQvmsbWa0hNPtkeqyRMGgoN+w=
-github.com/metacubex/sing v0.5.6-0.20250826072929-f69b475e017b h1:ukK1IMo7LJ+VmPWQPIdoslHBv4Tr3E2zE34ilQCH2i4=
-github.com/metacubex/sing v0.5.6-0.20250826072929-f69b475e017b/go.mod h1:ypf0mjwlZm0sKdQSY+yQvmsbWa0hNPtkeqyRMGgoN+w=
+github.com/metacubex/sing v0.5.6-0.20250903022707-c9bf6d825f4d h1:oprae0GgOxsKpEDa8+pF0WMPrUhpKDRJtBWPAxcy3yo=
+github.com/metacubex/sing v0.5.6-0.20250903022707-c9bf6d825f4d/go.mod h1:ypf0mjwlZm0sKdQSY+yQvmsbWa0hNPtkeqyRMGgoN+w=
 github.com/metacubex/sing-mux v0.3.3-0.20250813083925-d7c9aeaeeaac h1:wDH/Jh/yqWbzPktqJP+Y1cUG8hchcrzKzUxJiSpnaQs=
 github.com/metacubex/sing-mux v0.3.3-0.20250813083925-d7c9aeaeeaac/go.mod h1:3rt1soewn0O6j89GCLmwAQFsq257u0jf2zQSPhTL3Bw=
 github.com/metacubex/sing-quic v0.0.0-20250718154553-1b193bec4cbb h1:U/m3h8lp/j7i8zFgfvScLdZa1/Y8dd74oO7iZaQq80s=

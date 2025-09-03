@@ -40,7 +40,7 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mdlayher/netlink v1.7.2 // indirect
 	github.com/mdlayher/socket v0.4.1 // indirect
-	github.com/metacubex/amneziawg-go v0.0.0-20250820070344-732c0c9d418a // indirect
+	github.com/metacubex/amneziawg-go v0.0.0-20250902133113-a7f637c14281 // indirect
 	github.com/metacubex/ascon v0.1.0 // indirect
 	github.com/metacubex/bart v0.20.5 // indirect
 	github.com/metacubex/bbolt v0.0.0-20250725135710-010dbbbb7a5b // indirect
@@ -49,12 +49,12 @@ require (
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20250826025146-23043f716a2c // indirect
-	github.com/metacubex/mihomo v1.19.14-0.20250901171540-3b63fef2eb20 // indirect
+	github.com/metacubex/mihomo v1.19.14-0.20250903023144-7e9e12cc4c81 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/quic-go v0.54.1-0.20250730114134-a1ae705fe295 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/restls-client-go v0.1.7 // indirect
-	github.com/metacubex/sing v0.5.6-0.20250826072929-f69b475e017b // indirect
+	github.com/metacubex/sing v0.5.6-0.20250903022707-c9bf6d825f4d // indirect
 	github.com/metacubex/sing-mux v0.3.3-0.20250813083925-d7c9aeaeeaac // indirect
 	github.com/metacubex/sing-quic v0.0.0-20250718154553-1b193bec4cbb // indirect
 	github.com/metacubex/sing-shadowsocks v0.2.12 // indirect
