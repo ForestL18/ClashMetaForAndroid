@@ -283,6 +283,6 @@
     <string name="tun_stack_system">System 堆栈</string>
     <string name="tun_stack_gvisor">Gvisor 堆栈</string>
     <string name="tun_stack_mixed">Mixed 堆栈</string>
-    <string name="endpoint_independent_nat">端点无关 NAT</string>
-    <string name="endpoint_independent_nat_summary">仅 Mixed/Gvisor 堆栈可用</string>
+    <string name="disable_icmp_forwarding">禁用 ICMP 转发</string>
+    <string name="disable_icmp_forwarding_summary">使用伪 ICMP 回显进行回复</string>
 </resources>
