@@ -56,8 +56,8 @@ class ServiceStore(context: Context) {
         defaultValue = false
     )
 
-    var endpointIndependentNat by store.boolean(
-        key = "endpoint_independent_nat",
+    var disableIcmpForwarding by store.boolean(
+        key = "disable_icmp_forwarding",
         defaultValue = false
     )
 
