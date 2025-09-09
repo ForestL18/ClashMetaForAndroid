@@ -19,7 +19,7 @@ class TunModule(private val vpn: VpnService) : Module<Unit>(vpn) {
         val gateway: String,
         val portal: String,
         val dns: String,
-        val endpointIndependentNat: Boolean,
+        val disableIcmpForwarding: Boolean,
     )
 
     private val connectivity = service.getSystemService<ConnectivityManager>()!!
@@ -62,7 +62,7 @@ class TunModule(private val vpn: VpnService) : Module<Unit>(vpn) {
             gateway = device.gateway,
             portal = device.portal,
             dns = device.dns,
-            endpointIndependentNat = device.endpointIndependentNat,
+            disableIcmpForwarding = device.disableIcmpForwarding,
             markSocket = vpn::protect,
             querySocketUid = this::queryUid
         )
