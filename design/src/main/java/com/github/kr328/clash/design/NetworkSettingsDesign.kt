@@ -94,9 +94,9 @@ class NetworkSettingsDesign(
             }
 
             switch(
-                value = srvStore::endpointIndependentNat,
-                title = R.string.endpoint_independent_nat,
-                summary = R.string.endpoint_independent_nat_summary,
+                value = srvStore::disableIcmpForwarding,
+                title = R.string.disable_icmp_forwarding,
+                summary = R.string.disable_icmp_forwarding_summary,
                 configure = vpnDependencies::add,
             )
 
