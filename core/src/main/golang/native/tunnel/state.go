@@ -1,7 +1,7 @@
 package tunnel
 
 import (
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/ForestL18/mihomo/tunnel"
 )
 
 func QueryMode() string {

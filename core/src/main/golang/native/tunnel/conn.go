@@ -1,8 +1,8 @@
 package tunnel
 
 import (
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/tunnel/statistic"
+	C "github.com/ForestL18/mihomo/constant"
+	"github.com/ForestL18/mihomo/tunnel/statistic"
 )
 
 func CloseAllConnections() {
