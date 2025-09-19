@@ -15,7 +15,7 @@ import (
 	"cfa/native/delegate"
 	"cfa/native/tunnel"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/forestl18/mihomo/log"
 )
 
 func main() {

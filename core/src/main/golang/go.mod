@@ -4,11 +4,11 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.12.0
-	github.com/metacubex/mihomo v1.7.0
+	github.com/forestl18/mihomo v1.19.14-0.20250918084833-0c556bcaf34b
 	golang.org/x/sync v0.11.0
 )
 
-replace github.com/metacubex/mihomo => ../../foss/golang/clash
+replace github.com/forestl18/mihomo => ../../foss/golang/clash
 
 require (
 	github.com/RyuaNerin/go-krypto v1.3.0 // indirect

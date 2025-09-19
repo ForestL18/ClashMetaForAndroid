@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/forestl18/mihomo/constant/provider"
+	"github.com/forestl18/mihomo/log"
+	"github.com/forestl18/mihomo/tunnel"
 )
 
 var ErrInvalidType = errors.New("invalid type")

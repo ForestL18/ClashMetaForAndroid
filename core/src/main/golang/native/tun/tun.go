@@ -7,11 +7,11 @@ import (
 	"net/netip"
 	"strings"
 
-	C "github.com/metacubex/mihomo/constant"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/listener/sing_tun"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/tunnel"
+	C "github.com/forestl18/mihomo/constant"
+	LC "github.com/forestl18/mihomo/listener/config"
+	"github.com/forestl18/mihomo/listener/sing_tun"
+	"github.com/forestl18/mihomo/log"
+	"github.com/forestl18/mihomo/tunnel"
 )
 
 func Start(fd int, stack, gateway, portal, dns string, disableIcmpForwarding bool) (io.Closer, error) {
