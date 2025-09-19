@@ -63,9 +63,9 @@ require (
 	github.com/metacubex/jsonv2 v0.0.0-20260513175203-1c6abea7534c // indirect
 	github.com/metacubex/kcp-go v0.0.0-20260105040817-550693377604 // indirect
 	github.com/metacubex/mhurl v0.1.0 // indirect
-	github.com/metacubex/mihomo v1.7.0 // indirect
 	github.com/metacubex/mlkem v0.1.0 // indirect
 	github.com/metacubex/nftables v0.0.0-20260426003805-208c2c1ba2cb // indirect
+	github.com/forestl18/mihomo v1.19.14-0.20250918084833-0c556bcaf34b // indirect
 	github.com/metacubex/qpack v0.6.0 // indirect
 	github.com/metacubex/quic-go v0.59.1-0.20260413153657-53bb22f2c306 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
@@ -134,6 +134,6 @@ require (
 
 replace cfa => ../../main/golang
 
-replace github.com/metacubex/mihomo => ./clash
+replace github.com/forestl18/mihomo => ./clash
 
 replace google.golang.org/protobuf => github.com/metacubex/protobuf-go v0.0.0-20260306035419-7ceee0674686
