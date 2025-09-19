@@ -3,8 +3,8 @@ module cfa
 go 1.20
 
 require (
+	github.com/ForestL18/mihomo v1.18.9-0.20250919024430-618b900ac47f
 	github.com/dlclark/regexp2 v1.11.5
-	github.com/ForestL18/mihomo v1.19.14-0.20250918084833-0c556bcaf34b
 	golang.org/x/sync v0.11.0
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -12,6 +12,7 @@ require (
 replace github.com/ForestL18/mihomo => ../../foss/golang/clash
 
 require (
+	github.com/ForestL18/sing-tun v0.4.8-0.20250913024939-a0e9943a539f // indirect
 	github.com/RyuaNerin/go-krypto v1.3.0 // indirect
 	github.com/Yawning/aez v0.0.0-20211027044916-e49e68abd344 // indirect
 	github.com/ajg/form v1.5.1 // indirect
@@ -55,7 +56,8 @@ require (
 	github.com/metacubex/chacha v0.1.5 // indirect
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
-	github.com/metacubex/gvisor v0.0.0-20250910065513-46d8fd52f27b // indirect
+	github.com/metacubex/gvisor v0.0.0-20250919004547-6122b699a301 // indirect
+	github.com/metacubex/mihomo v1.19.13 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/quic-go v0.54.1-0.20250730114134-a1ae705fe295 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
@@ -66,6 +68,7 @@ require (
 	github.com/metacubex/sing-shadowsocks v0.2.12 // indirect
 	github.com/metacubex/sing-shadowsocks2 v0.2.7 // indirect
 	github.com/metacubex/sing-shadowtls v0.0.0-20250503063515-5d9f966d17a2 // indirect
+	github.com/metacubex/sing-tun v0.4.7 // indirect
 	github.com/metacubex/sing-vmess v0.2.4-0.20250908094854-bc8e2a88b115 // indirect
 	github.com/metacubex/sing-wireguard v0.0.0-20250503063753-2dc62acc626f // indirect
 	github.com/metacubex/smux v0.0.0-20250503055512-501391591dee // indirect
