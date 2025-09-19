@@ -45,16 +45,16 @@ jobs:
         run: |
           cd ${{ github.workspace }}/core/src/foss/golang/
           update-go-mod-replace ${{ github.workspace }}/core/src/foss/golang/clash/go.mod $(pwd)/go.mod
-          go mod edit -droprequire github.com/metacubex/mihomo
-          go get github.com/metacubex/mihomo@Alpha
+          go mod edit -droprequire github.com/forestl18/mihomo
+          go get github.com/forestl18/mihomo@beta
           go mod tidy
 
       - name: Update Main Gomod
         run: |
           cd ${{ github.workspace }}/core/src/main/golang/
           update-go-mod-replace ${{ github.workspace }}/core/src/foss/golang/clash/go.mod $(pwd)/go.mod
-          go mod edit -droprequire github.com/metacubex/mihomo
-          go get github.com/metacubex/mihomo@Alpha
+          go mod edit -droprequire github.com/forestl18/mihomo
+          go get github.com/forestl18/mihomo@beta
           go mod tidy
 
       - uses: tibdex/github-app-token@v2
