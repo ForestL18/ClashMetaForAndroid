@@ -9,7 +9,7 @@ import (
 
 	"cfa/native/app"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/forestl18/mihomo/log"
 )
 
 func openRemoteContent(url string) (int, error) {
@@ -47,7 +47,6 @@ func notifyInstalledAppsChanged(uids C.c_string) {
 func notifyTimeZoneChanged(name C.c_string, offset C.int) {
 	app.NotifyTimeZoneChanged(C.GoString(name), int(offset))
 }
-
 
 //export queryConfiguration
 func queryConfiguration() *C.char {
