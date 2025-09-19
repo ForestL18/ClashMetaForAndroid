@@ -3,10 +3,10 @@ package tunnel
 import (
 	"sync"
 
-	"github.com/metacubex/mihomo/adapter/outboundgroup"
-	"github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/forestl18/mihomo/adapter/outboundgroup"
+	"github.com/forestl18/mihomo/constant/provider"
+	"github.com/forestl18/mihomo/log"
+	"github.com/forestl18/mihomo/tunnel"
 )
 
 func HealthCheck(name string) {
