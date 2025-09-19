@@ -3,7 +3,7 @@ package app
 import (
 	"github.com/dlclark/regexp2"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/ForestL18/mihomo/log"
 )
 
 var uiSubtitlePattern *regexp2.Regexp

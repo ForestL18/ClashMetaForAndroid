@@ -3,7 +3,7 @@ package config
 import (
 	"io"
 
-	"github.com/metacubex/mihomo/config"
+	"github.com/ForestL18/mihomo/config"
 )
 
 const (

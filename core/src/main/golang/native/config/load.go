@@ -10,9 +10,9 @@ import (
 
 	"cfa/native/app"
 
-	"github.com/metacubex/mihomo/config"
-	"github.com/metacubex/mihomo/hub"
-	"github.com/metacubex/mihomo/log"
+	"github.com/ForestL18/mihomo/config"
+	"github.com/ForestL18/mihomo/hub"
+	"github.com/ForestL18/mihomo/log"
 )
 
 func logDns(cfg *config.RawConfig) {

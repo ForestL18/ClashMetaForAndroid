@@ -48,7 +48,7 @@ require (
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20250910065513-46d8fd52f27b // indirect
-	github.com/metacubex/mihomo v1.19.14-0.20250918084833-0c556bcaf34b // indirect
+	github.com/ForestL18/mihomo v1.19.14-0.20250918084833-0c556bcaf34b // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/quic-go v0.54.1-0.20250730114134-a1ae705fe295 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
@@ -111,4 +111,4 @@ require (
 
 replace cfa => ../../main/golang
 
-replace github.com/metacubex/mihomo => ./clash
+replace github.com/ForestL18/mihomo => ./clash
