@@ -6,14 +6,14 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/metacubex/mihomo/component/process"
-	"github.com/metacubex/mihomo/log"
+	"github.com/ForestL18/mihomo/component/process"
+	"github.com/ForestL18/mihomo/log"
 
 	"cfa/native/app"
 	"cfa/native/platform"
 
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/constant"
+	"github.com/ForestL18/mihomo/component/dialer"
+	"github.com/ForestL18/mihomo/constant"
 )
 
 var errBlocked = errors.New("blocked")

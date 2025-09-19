@@ -4,12 +4,12 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.11.5
-	github.com/metacubex/mihomo v1.19.14-0.20250918084833-0c556bcaf34b
+	github.com/ForestL18/mihomo v1.19.14-0.20250918084833-0c556bcaf34b
 	golang.org/x/sync v0.11.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
-replace github.com/metacubex/mihomo => ../../foss/golang/clash
+replace github.com/ForestL18/mihomo => ../../foss/golang/clash
 
 require (
 	github.com/RyuaNerin/go-krypto v1.3.0 // indirect
@@ -66,7 +66,6 @@ require (
 	github.com/metacubex/sing-shadowsocks v0.2.12 // indirect
 	github.com/metacubex/sing-shadowsocks2 v0.2.7 // indirect
 	github.com/metacubex/sing-shadowtls v0.0.0-20250503063515-5d9f966d17a2 // indirect
-	github.com/metacubex/sing-tun v0.4.8-0.20250912172659-89eba941fb22 // indirect
 	github.com/metacubex/sing-vmess v0.2.4-0.20250908094854-bc8e2a88b115 // indirect
 	github.com/metacubex/sing-wireguard v0.0.0-20250503063753-2dc62acc626f // indirect
 	github.com/metacubex/smux v0.0.0-20250503055512-501391591dee // indirect
