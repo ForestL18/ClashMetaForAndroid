@@ -46,7 +46,7 @@ jobs:
           cd ${{ github.workspace }}/core/src/foss/golang/
           update-go-mod-replace ${{ github.workspace }}/core/src/foss/golang/clash/go.mod $(pwd)/go.mod
           go mod edit -droprequire github.com/ForestL18/mihomo
-          go get github.com/ForestL18/mihomo@beta
+          go get github.com/ForestL18/mihomo@HEAD
           go mod tidy
 
       - name: Update Main Gomod
@@ -54,7 +54,7 @@ jobs:
           cd ${{ github.workspace }}/core/src/main/golang/
           update-go-mod-replace ${{ github.workspace }}/core/src/foss/golang/clash/go.mod $(pwd)/go.mod
           go mod edit -droprequire github.com/ForestL18/mihomo
-          go get github.com/ForestL18/mihomo@beta
+          go get github.com/ForestL18/mihomo@HEAD
           go mod tidy
 
       - uses: tibdex/github-app-token@v2
