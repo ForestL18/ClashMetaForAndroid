@@ -69,17 +69,17 @@ jobs:
         if: success()
         run: ./gradlew --no-daemon app:assembleAlphaRelease
 
-      # Delete old Prerelease-alpha
+      # Delete old Prerelease-beta
       - uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
-          tag_name: Prerelease-alpha
+          tag_name: Prerelease-beta
           github_token: ${{ secrets.GITHUB_TOKEN }}
           delete_release: true
 
       - name: Tag Repo
         uses: richardsimko/update-tag@v3
         with:
-          tag_name: Prerelease-alpha
+          tag_name: Prerelease-beta
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -87,7 +87,7 @@ jobs:
         uses: softprops/action-gh-release@v3
         if: ${{  success() }}
         with:
-          tag_name: Prerelease-alpha
+          tag_name: Prerelease-beta
           files: app/build/outputs/apk/alpha/release/*
           prerelease: true
           generate_release_notes: true
