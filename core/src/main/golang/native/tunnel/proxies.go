@@ -6,11 +6,11 @@ import (
 
 	"github.com/dlclark/regexp2"
 
-	"github.com/metacubex/mihomo/adapter/outboundgroup"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/forestl18/mihomo/adapter/outboundgroup"
+	C "github.com/forestl18/mihomo/constant"
+	"github.com/forestl18/mihomo/constant/provider"
+	"github.com/forestl18/mihomo/log"
+	"github.com/forestl18/mihomo/tunnel"
 )
 
 type SortMode int

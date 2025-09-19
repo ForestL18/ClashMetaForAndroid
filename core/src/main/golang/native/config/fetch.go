@@ -16,9 +16,9 @@ import (
 
 	"cfa/native/app"
 
-	"github.com/metacubex/mihomo/adapter/provider"
-	clashHttp "github.com/metacubex/mihomo/component/http"
-	RB "github.com/metacubex/mihomo/rules/bundle"
+	"github.com/forestl18/mihomo/adapter/provider"
+	clashHttp "github.com/forestl18/mihomo/component/http"
+	RB "github.com/forestl18/mihomo/rules/bundle"
 )
 
 type Status struct {
