@@ -5,7 +5,7 @@ go 1.20
 require cfa v0.0.0
 
 require (
-	github.com/ForestL18/mihomo v1.19.14-0.20250919082306-619485cdbd97 // indirect
+	github.com/ForestL18/mihomo v1.19.14-0.20250919180152-fb008244366d // indirect
 	github.com/ForestL18/sing-tun v0.4.8-0.20250913024939-a0e9943a539f // indirect
 	github.com/RyuaNerin/go-krypto v1.3.0 // indirect
 	github.com/Yawning/aez v0.0.0-20211027044916-e49e68abd344 // indirect
