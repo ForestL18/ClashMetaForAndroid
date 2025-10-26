@@ -19,7 +19,7 @@ require (
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
 	github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 // indirect
-	github.com/forestl18/mihomo v1.19.14-0.20251014151516-0373b898ed96 // indirect
+	github.com/forestl18/mihomo v1.19.14-0.20251026101310-e762f1f9fa9c // indirect
 	github.com/forestl18/sing-tun v0.4.9-0.20250922050710-21c1e072199e // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
@@ -45,7 +45,7 @@ require (
 	github.com/mdlayher/socket v0.4.1 // indirect
 	github.com/metacubex/amneziawg-go v0.0.0-20250902133113-a7f637c14281 // indirect
 	github.com/metacubex/ascon v0.1.0 // indirect
-	github.com/metacubex/bart v0.24.0 // indirect
+	github.com/metacubex/bart v0.26.0 // indirect
 	github.com/metacubex/bbolt v0.0.0-20250725135710-010dbbbb7a5b // indirect
 	github.com/metacubex/blake3 v0.1.0 // indirect
 	github.com/metacubex/chacha v0.1.5 // indirect
@@ -54,7 +54,7 @@ require (
 	github.com/metacubex/gvisor v0.0.0-20250919004547-6122b699a301 // indirect
 	github.com/metacubex/kcp-go v0.0.0-20251007183319-0df1aec1639a // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
-	github.com/metacubex/quic-go v0.55.1-0.20251004050223-450bd9e32033 // indirect
+	github.com/metacubex/quic-go v0.55.1-0.20251024060151-bd465f127128 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/restls-client-go v0.1.7 // indirect
 	github.com/metacubex/sing v0.5.6 // indirect
@@ -66,8 +66,8 @@ require (
 	github.com/metacubex/sing-vmess v0.2.4 // indirect
 	github.com/metacubex/sing-wireguard v0.0.0-20250503063753-2dc62acc626f // indirect
 	github.com/metacubex/smux v0.0.0-20250922175018-15c9a6a78719 // indirect
-	github.com/metacubex/tfo-go v0.0.0-20250921095601-b102db4216c0 // indirect
-	github.com/metacubex/utls v1.8.2 // indirect
+	github.com/metacubex/tfo-go v0.0.0-20251024101424-368b42b59148 // indirect
+	github.com/metacubex/utls v1.8.3 // indirect
 	github.com/metacubex/wireguard-go v0.0.0-20250820062549-a6cecdd7f57f // indirect
 	github.com/metacubex/yamux v0.0.0-20250918083631-dd5f17c0be49 // indirect
 	github.com/miekg/dns v1.1.63 // indirect
