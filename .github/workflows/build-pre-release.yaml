@@ -46,6 +46,20 @@ jobs:
           curl -L https://raw.githubusercontent.com/ForestL18/scart/refs/heads/main/scart | bash
           cp -f /etc/ssl/certs/ca-certificates.crt core/src/foss/golang/clash/component/ca/ca-certificates.crt
 
+      - name: Local Properties
+        env:
+          #ANDROID_SDK_ROOT: ${{ ANDROID_SDK_ROOT }}
+          CUSTOM_APPLICATION_ID: ${{ secrets.CUSTOM_APPLICATION_ID }}
+          REMOVE_SUFFIX: ${{ secrets.REMOVE_SUFFIX }}
+        run: |
+          touch local.properties
+          # echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+          echo custom.application.id="$CUSTOM_APPLICATION_ID" >> local.properties
+          echo remove.suffix="$REMOVE_SUFFIX" >> local.properties
+
+          echo "cat local.properties"
+          cat local.properties
+
       - name: Signing properties
         env:
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
