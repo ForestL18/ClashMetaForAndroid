@@ -19,7 +19,7 @@ require (
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
 	github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 // indirect
-	github.com/forestl18/mihomo v1.19.14-0.20251203094741-7ff479459f16 // indirect
+	github.com/forestl18/mihomo v1.19.14-0.20251204091450-50cb9a8ebc1b // indirect
 	github.com/forestl18/sing-tun v0.4.11-0.20251201030719-fe7bee3d86b3 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
@@ -78,7 +78,7 @@ require (
 	github.com/oschwald/maxminddb-golang v1.12.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.14 // indirect
 	github.com/quic-go/qpack v0.4.0 // indirect
-	github.com/saba-futai/sudoku v0.0.1-g // indirect
+	github.com/saba-futai/sudoku v0.0.1-i // indirect
 	github.com/sagernet/cors v1.2.1 // indirect
 	github.com/sagernet/netlink v0.0.0-20240612041022-b9a21c07ac6a // indirect
 	github.com/samber/lo v1.52.0 // indirect
