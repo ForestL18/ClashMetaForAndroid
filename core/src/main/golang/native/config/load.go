@@ -6,10 +6,9 @@ import (
 	"runtime"
 	"strings"
 
-	"gopkg.in/yaml.v3"
-
 	"cfa/native/app"
 
+	"github.com/forestl18/mihomo/common/yaml"
 	"github.com/forestl18/mihomo/config"
 	"github.com/forestl18/mihomo/hub"
 	"github.com/forestl18/mihomo/log"

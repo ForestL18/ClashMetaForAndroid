@@ -6,7 +6,6 @@ require (
 	github.com/dlclark/regexp2 v1.11.5
 	github.com/forestl18/mihomo v1.19.14-0.20260116131342-ca1827402a93
 	golang.org/x/sync v0.11.0
-	gopkg.in/yaml.v3 v3.0.1
 )
 
 replace github.com/forestl18/mihomo => ../../foss/golang/clash
@@ -110,5 +109,5 @@ require (
 	golang.org/x/time v0.10.0 // indirect
 	golang.org/x/tools v0.24.0 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
-	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
