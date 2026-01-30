@@ -119,6 +119,10 @@ class NetworkObserveModule(service: Service) : Module<Network>(service) {
     private fun notifyDnsChange() {
         val dnsList = (networkInfos.asSequence().minByOrNull { networkToInt(it) }?.value?.dnsList
             ?: emptyList()).map { x -> x.asSocketAddressText(53) }
+        if (dnsList.size > 1) {
+            // Domestic Android manufacturers will append this server forcibly.
+            dnsList = dnsList.filter { it != "114.114.114.114:53" }
+        }
         val prevDnsList = curDnsList
         if (dnsList.isNotEmpty() && prevDnsList != dnsList) {
             Log.i("notifyDnsChange $prevDnsList -> $dnsList")
