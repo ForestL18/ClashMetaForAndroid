@@ -31,8 +31,8 @@ github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 h1:tlDMEdcPRQKBE
 github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1/go.mod h1:4RfsapbGx2j/vU5xC/5/9qB3kn9Awp1YDiEnN43QrJ4=
 github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 h1:fuGucgPk5dN6wzfnxl3D0D3rVLw4v2SbBT9jb4VnxzA=
 github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010/go.mod h1:JtBcj7sBuTTRupn7c2bFspMDIObMJsVK8TeUvpShPok=
-github.com/forestl18/sing-tun v0.4.14-0.20260201071400-1baa98ed8613 h1:mLY+ulGgUMFK4Xn/gYNG8dFK++ied5wtPJDpCyW1Hl8=
-github.com/forestl18/sing-tun v0.4.14-0.20260201071400-1baa98ed8613/go.mod h1:yIG1KgM6jzXLzufZibvxhqH+aI6Mq9Nv1m6+Y+cs6tk=
+github.com/forestl18/sing-tun v0.4.16-0.20260202124854-13abf53c653b h1:TraL0UJgz+kZqLdEmrDbg82gQtFpnt3Uxo0wk1Idkxk=
+github.com/forestl18/sing-tun v0.4.16-0.20260202124854-13abf53c653b/go.mod h1:yIG1KgM6jzXLzufZibvxhqH+aI6Mq9Nv1m6+Y+cs6tk=
 github.com/fsnotify/fsnotify v1.9.0 h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=
 github.com/fsnotify/fsnotify v1.9.0/go.mod h1:8jBTzvmWwFyi3Pb8djgCCO5IBqzKJ/Jwo8TRcHyHii0=
 github.com/gaukas/godicttls v0.0.4 h1:NlRaXb3J6hAnTmWdsEKb9bcSBD6BvcIjdGdeb0zfXbk=
