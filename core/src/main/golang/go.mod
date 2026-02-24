@@ -4,14 +4,13 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.11.5
-	github.com/forestl18/mihomo v1.19.14-0.20260208074210-723767701701
+	github.com/forestl18/mihomo v1.19.14-0.20260224093530-8e7d83c03aec
 	golang.org/x/sync v0.11.0
 )
 
 replace github.com/forestl18/mihomo => ../../foss/golang/clash
 
 require (
-	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/RyuaNerin/go-krypto v1.3.0 // indirect
 	github.com/Yawning/aez v0.0.0-20211027044916-e49e68abd344 // indirect
 	github.com/ajg/form v1.5.1 // indirect
@@ -24,7 +23,7 @@ require (
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
 	github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 // indirect
-	github.com/forestl18/sing-tun v0.4.16-0.20260202124854-13abf53c653b // indirect
+	github.com/forestl18/sing-tun v0.4.16-0.20260213082751-24d8021646b2 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
 	github.com/go-ole/go-ole v1.3.0 // indirect
@@ -53,6 +52,7 @@ require (
 	github.com/metacubex/chi v0.1.0 // indirect
 	github.com/metacubex/connect-ip-go v0.0.0-20260128031117-1cad62060727 // indirect
 	github.com/metacubex/cpu v0.1.0 // indirect
+	github.com/metacubex/edwards25519 v1.2.0 // indirect
 	github.com/metacubex/fswatch v0.1.1 // indirect
 	github.com/metacubex/gopacket v1.1.20-0.20230608035415-7e2f98a3e759 // indirect
 	github.com/metacubex/gvisor v0.0.0-20251227095601-261ec1326fe8 // indirect
@@ -63,7 +63,7 @@ require (
 	github.com/metacubex/mlkem v0.1.0 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/qpack v0.6.0 // indirect
-	github.com/metacubex/quic-go v0.59.1-0.20260128071132-0f3233b973af // indirect
+	github.com/metacubex/quic-go v0.59.1-0.20260213014310-4df8f0de5b56 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/restls-client-go v0.1.7 // indirect
 	github.com/metacubex/sing v0.5.7 // indirect
