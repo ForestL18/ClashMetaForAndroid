@@ -18,8 +18,8 @@ github.com/dlclark/regexp2 v1.11.5 h1:Q/sSnsKerHeCkc/jSTNq1oCm7KiVgUMZRDUoRu0JQZ
 github.com/dlclark/regexp2 v1.11.5/go.mod h1:DHkYz0B9wPfa6wondMfaivmHpzrQ3v9q8cnmRbL6yW8=
 github.com/dunglas/httpsfv v1.0.2 h1:iERDp/YAfnojSDJ7PW3dj1AReJz4MrwbECSSE59JWL0=
 github.com/dunglas/httpsfv v1.0.2/go.mod h1:zID2mqw9mFsnt7YC3vYQ9/cjq30q41W+1AnDwH8TiMg=
-github.com/enfein/mieru/v3 v3.26.2 h1:U/2XJc+3vrJD9r815FoFdwToQFEcqSOzzzWIPPhjfEU=
-github.com/enfein/mieru/v3 v3.26.2/go.mod h1:zJBUCsi5rxyvHM8fjFf+GLaEl4OEjjBXr1s5F6Qd3hM=
+github.com/enfein/mieru/v3 v3.28.0 h1:4OsFPUIjKfQ6ymfyX1Laqz7h+zB8TxuK1m0isnYJ8ww=
+github.com/enfein/mieru/v3 v3.28.0/go.mod h1:zJBUCsi5rxyvHM8fjFf+GLaEl4OEjjBXr1s5F6Qd3hM=
 github.com/ericlagergren/aegis v0.0.0-20250325060835-cd0defd64358 h1:kXYqH/sL8dS/FdoFjr12ePjnLPorPo2FsnrHNuXSDyo=
 github.com/ericlagergren/aegis v0.0.0-20250325060835-cd0defd64358/go.mod h1:hkIFzoiIPZYxdFOOLyDho59b7SrDfo+w3h+yWdlg45I=
 github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 h1:8j2RH289RJplhA6WfdaPqzg1MjH2K8wX5e0uhAxrw2g=
@@ -29,8 +29,8 @@ github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 h1:tlDMEdcPRQKBE
 github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1/go.mod h1:4RfsapbGx2j/vU5xC/5/9qB3kn9Awp1YDiEnN43QrJ4=
 github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 h1:fuGucgPk5dN6wzfnxl3D0D3rVLw4v2SbBT9jb4VnxzA=
 github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010/go.mod h1:JtBcj7sBuTTRupn7c2bFspMDIObMJsVK8TeUvpShPok=
-github.com/forestl18/sing-tun v0.4.16-0.20260213082751-24d8021646b2 h1:2aF+zjuZLISKNgbjmpTTWRL9Iyh8bY6ctTWNE2BU3Zo=
-github.com/forestl18/sing-tun v0.4.16-0.20260213082751-24d8021646b2/go.mod h1:yIG1KgM6jzXLzufZibvxhqH+aI6Mq9Nv1m6+Y+cs6tk=
+github.com/forestl18/sing-tun v0.4.16-0.20260304130237-3bbaaa16b99d h1:6eimzBnKfQYVNki3VL4Nx4Wk0Ydr1o8RJJk+Ar0NQn4=
+github.com/forestl18/sing-tun v0.4.16-0.20260304130237-3bbaaa16b99d/go.mod h1:yIG1KgM6jzXLzufZibvxhqH+aI6Mq9Nv1m6+Y+cs6tk=
 github.com/fsnotify/fsnotify v1.9.0 h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=
 github.com/fsnotify/fsnotify v1.9.0/go.mod h1:8jBTzvmWwFyi3Pb8djgCCO5IBqzKJ/Jwo8TRcHyHii0=
 github.com/gaukas/godicttls v0.0.4 h1:NlRaXb3J6hAnTmWdsEKb9bcSBD6BvcIjdGdeb0zfXbk=
