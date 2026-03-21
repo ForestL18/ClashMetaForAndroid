@@ -70,7 +70,8 @@ jobs:
       # If any change found, commit it and push
       - name: Commit and push if changes
         run: |
-          changes=$(git diff --name-only origin/main | wc -l)
+          branch=${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}
+          changes=$(git diff --name-only "origin/$branch" | wc -l)
           if [ $changes -gt 0 ]
           then
             newVersionName=${{ steps.process-version.outputs.versonName }}
