@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.11.5
-	github.com/forestl18/mihomo v1.19.14-0.20260321102119-4fda7c5a0ad1
+	github.com/forestl18/mihomo v1.19.14-0.20260322174210-6f85943dd86b
 	golang.org/x/sync v0.11.0
 )
 
