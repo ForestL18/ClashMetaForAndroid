@@ -18,7 +18,7 @@ require (
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
 	github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 // indirect
-	github.com/forestl18/mihomo v1.19.14-0.20260413102956-9b69f1ab164e // indirect
+	github.com/forestl18/mihomo v1.19.14-0.20260414142815-61754421cac9 // indirect
 	github.com/forestl18/sing-tun v0.4.18-0.20260407042150-db7f0e3ee07c // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
@@ -59,12 +59,12 @@ require (
 	github.com/metacubex/mlkem v0.1.0 // indirect
 	github.com/metacubex/nftables v0.0.0-20250503052935-30a69ab87793 // indirect
 	github.com/metacubex/qpack v0.6.0 // indirect
-	github.com/metacubex/quic-go v0.59.1-0.20260413004841-fbd014840823 // indirect
+	github.com/metacubex/quic-go v0.59.1-0.20260413153657-53bb22f2c306 // indirect
 	github.com/metacubex/randv2 v0.2.0 // indirect
 	github.com/metacubex/restls-client-go v0.1.7 // indirect
 	github.com/metacubex/sing v0.5.7 // indirect
-	github.com/metacubex/sing-mux v0.3.5 // indirect
-	github.com/metacubex/sing-quic v0.0.0-20260411121336-043f0078bb1c // indirect
+	github.com/metacubex/sing-mux v0.3.6 // indirect
+	github.com/metacubex/sing-quic v0.0.0-20260414034501-3ea3410d197a // indirect
 	github.com/metacubex/sing-shadowsocks v0.2.12 // indirect
 	github.com/metacubex/sing-shadowsocks2 v0.2.7 // indirect
 	github.com/metacubex/sing-shadowtls v0.0.0-20250503063515-5d9f966d17a2 // indirect
