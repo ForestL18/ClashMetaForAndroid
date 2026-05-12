@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.12.0
-	github.com/forestl18/mihomo v1.19.14-0.20260509155224-085addaaace4
+	github.com/forestl18/mihomo v1.19.14-0.20260512020917-b823b4960381
 	golang.org/x/sync v0.11.0
 )
 
@@ -69,7 +69,7 @@ require (
 	github.com/metacubex/restls-client-go v0.1.7 // indirect
 	github.com/metacubex/sing v0.5.7 // indirect
 	github.com/metacubex/sing-mux v0.3.9 // indirect
-	github.com/metacubex/sing-quic v0.0.0-20260414034501-3ea3410d197a // indirect
+	github.com/metacubex/sing-quic v0.0.0-20260511111944-ed400da99ad4 // indirect
 	github.com/metacubex/sing-shadowsocks v0.2.12 // indirect
 	github.com/metacubex/sing-shadowsocks2 v0.2.7 // indirect
 	github.com/metacubex/sing-shadowtls v0.0.0-20250503063515-5d9f966d17a2 // indirect
