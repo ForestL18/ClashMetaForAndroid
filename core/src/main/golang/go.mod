@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.12.0
-	github.com/forestl18/mihomo v1.19.26-0.20260517161424-c27ab02d1182
+	github.com/forestl18/mihomo v1.19.26-0.20260519102302-02e1dfeb5f37
 	golang.org/x/sync v0.11.0
 )
 
@@ -67,7 +67,7 @@ require (
 	github.com/metacubex/hkdf v0.1.0 // indirect
 	github.com/metacubex/hpke v0.1.0 // indirect
 	github.com/metacubex/http v0.1.6 // indirect
-	github.com/metacubex/jsonv2 v0.0.0-20260513175203-1c6abea7534c // indirect
+	github.com/metacubex/jsonv2 v0.0.0-20260518173308-f4597c22f1df // indirect
 	github.com/metacubex/kcp-go v0.0.0-20260105040817-550693377604 // indirect
 	github.com/metacubex/mhurl v0.1.0 // indirect
 	github.com/metacubex/mlkem v0.1.0 // indirect
@@ -86,7 +86,7 @@ require (
 	github.com/metacubex/sing-wireguard v0.0.0-20260507084707-690d479ec947 // indirect
 	github.com/metacubex/smux v0.0.0-20260105030934-d0c8756d3141 // indirect
 	github.com/metacubex/ssh v0.1.0 // indirect
-	github.com/metacubex/tailscale v0.0.0-20260517085217-00f8608d19e5 // indirect
+	github.com/metacubex/tailscale v0.0.0-20260518175029-9e64d98cba81 // indirect
 	github.com/metacubex/tailscale-wireguard-go v0.0.0-20260513233728-8bc7ee255d04 // indirect
 	github.com/metacubex/tfo-go v0.0.0-20251130171125-413e892ac443 // indirect
 	github.com/metacubex/tls v0.1.5 // indirect
