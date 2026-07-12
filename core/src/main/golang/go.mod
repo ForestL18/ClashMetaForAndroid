@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.12.0
-	github.com/forestl18/mihomo v1.19.26-0.20260711111613-793b8679d2d1
+	github.com/forestl18/mihomo v1.19.29-0.20260712125212-307f103bc2f3
 	golang.org/x/sync v0.11.0
 )
 
@@ -90,7 +90,7 @@ require (
 	github.com/metacubex/sing-wireguard v0.0.0-20260520151737-7e7c7c1b854c // indirect
 	github.com/metacubex/smux v0.0.0-20260105030934-d0c8756d3141 // indirect
 	github.com/metacubex/ssh v0.1.0 // indirect
-	github.com/metacubex/tailscale v0.0.0-20260623094802-1ab893d4162c // indirect
+	github.com/metacubex/tailscale v0.0.0-20260711142031-e2257fe61058 // indirect
 	github.com/metacubex/tailscale-wireguard-go v0.0.0-20260623093519-06ea214022e4 // indirect
 	github.com/metacubex/tfo-go v0.0.0-20260623020846-376a77860b8c // indirect
 	github.com/metacubex/tls v0.1.7 // indirect
