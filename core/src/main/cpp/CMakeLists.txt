@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 
 # 获取git hash
 
@@ -10,8 +10,8 @@ execute_process(
 )
 string(REPLACE "\n" ";" COMMIT_HASH "${COMMIT_HASH}")
 list(GET COMMIT_HASH 1 COMMIT_HASH)
-string (REGEX REPLACE "[\n\t\r]" "" COMMIT_HASH ${COMMIT_HASH})
-string(SUBSTRING ${COMMIT_HASH} 0 7 COMMIT_HASH)
+string(REGEX REPLACE "[\n\t\r]" "" COMMIT_HASH "${COMMIT_HASH}")
+string(SUBSTRING "${COMMIT_HASH}" 0 7 COMMIT_HASH)
 message(STATUS "git hash= ${COMMIT_HASH}")
 
 # 获取分支名称
@@ -23,15 +23,15 @@ execute_process(
 string(REGEX REPLACE "[^\n]*HEAD[^\n]*\n?" "" CURRENT_BRANCH "${CURRENT_BRANCH}")
 string(REPLACE "\n" ";" CURRENT_BRANCH "${CURRENT_BRANCH}")
 list(GET CURRENT_BRANCH 1 CURRENT_BRANCH)
-string (REGEX REPLACE "origin/" "" CURRENT_BRANCH ${CURRENT_BRANCH})
-string (REGEX REPLACE "[\n\t\r]" "" CURRENT_BRANCH ${CURRENT_BRANCH})
+string(REGEX REPLACE "origin/" "" CURRENT_BRANCH "${CURRENT_BRANCH}")
+string(REGEX REPLACE "[\n\t\r]" "" CURRENT_BRANCH "${CURRENT_BRANCH}")
 #string(SUBSTRING ${CURRENT_BRANCH} 0 8 CURRENT_BRANCH)
 message(STATUS "git current branch = ${CURRENT_BRANCH}")
 
 # 获取生成时间
 string(TIMESTAMP COMPILE_TIME "%y%m%d")
-string (REGEX REPLACE "[\n\t\r]" "" COMPILE_TIME ${COMPILE_TIME})
-string(REGEX REPLACE "\"" "" COMPILE_TIME ${COMPILE_TIME})
+string(REGEX REPLACE "[\n\t\r]" "" COMPILE_TIME "${COMPILE_TIME}")
+string(REGEX REPLACE "\"" "" COMPILE_TIME "${COMPILE_TIME}")
 
 # 生成版本信息
 set(GIT_VERSION "${CURRENT_BRANCH}_${COMMIT_HASH}_${COMPILE_TIME}")
