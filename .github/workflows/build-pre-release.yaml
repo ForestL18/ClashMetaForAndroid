@@ -14,9 +14,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v6
-      
+        with:
+          fetch-depth: 0
+
       - name: Checkout submodules
-        run: git submodule update --init --recursive --force
+        run: |
+          git submodule update --init --recursive --force
+          git -C core/src/foss/golang/clash fetch origin '+refs/heads/*:refs/remotes/origin/*'
 
       - name: Setup Java
         uses: actions/setup-java@v5

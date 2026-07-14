@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 
 # 获取git hash
 
@@ -10,28 +10,44 @@ execute_process(
 )
 string(REPLACE "\n" ";" COMMIT_HASH "${COMMIT_HASH}")
 list(GET COMMIT_HASH 1 COMMIT_HASH)
-string (REGEX REPLACE "[\n\t\r]" "" COMMIT_HASH ${COMMIT_HASH})
-string(SUBSTRING ${COMMIT_HASH} 0 7 COMMIT_HASH)
+string(REGEX REPLACE "[\n\t\r]" "" COMMIT_HASH "${COMMIT_HASH}")
+string(SUBSTRING "${COMMIT_HASH}" 0 7 COMMIT_HASH)
 message(STATUS "git hash= ${COMMIT_HASH}")
 
 # 获取分支名称
 execute_process(
-  COMMAND git submodule foreach git branch -r --contains ${COMMIT_HASH}
-  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} 
+  COMMAND git submodule foreach --quiet git branch -r --contains ${COMMIT_HASH}
+  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
   OUTPUT_VARIABLE CURRENT_BRANCH
+  ERROR_QUIET
 )
+
+# 滤掉 "origin/HEAD -> ..." 这类行
 string(REGEX REPLACE "[^\n]*HEAD[^\n]*\n?" "" CURRENT_BRANCH "${CURRENT_BRANCH}")
-string(REPLACE "\n" ";" CURRENT_BRANCH "${CURRENT_BRANCH}")
-list(GET CURRENT_BRANCH 1 CURRENT_BRANCH)
-string (REGEX REPLACE "origin/" "" CURRENT_BRANCH ${CURRENT_BRANCH})
-string (REGEX REPLACE "[\n\t\r]" "" CURRENT_BRANCH ${CURRENT_BRANCH})
-#string(SUBSTRING ${CURRENT_BRANCH} 0 8 CURRENT_BRANCH)
+string(REGEX REPLACE "\n" ";" CURRENT_BRANCH "${CURRENT_BRANCH}")
+list(FILTER CURRENT_BRANCH EXCLUDE REGEX "^[ \t]*$")
+
+if(CURRENT_BRANCH)
+  list(GET CURRENT_BRANCH 0 CURRENT_BRANCH)
+  string(REGEX REPLACE "origin/" "" CURRENT_BRANCH "${CURRENT_BRANCH}")
+  string(REGEX REPLACE "[\n\t\r ]" "" CURRENT_BRANCH "${CURRENT_BRANCH}")
+endif()
+
+# 兜底：浅克隆 / detached HEAD 下拿不到分支名
+if(NOT CURRENT_BRANCH)
+  if(DEFINED ENV{GIT_BRANCH_OVERRIDE})
+    set(CURRENT_BRANCH "$ENV{GIT_BRANCH_OVERRIDE}")
+  else()
+    set(CURRENT_BRANCH "beta")
+  endif()
+endif()
+
 message(STATUS "git current branch = ${CURRENT_BRANCH}")
 
 # 获取生成时间
 string(TIMESTAMP COMPILE_TIME "%y%m%d")
-string (REGEX REPLACE "[\n\t\r]" "" COMPILE_TIME ${COMPILE_TIME})
-string(REGEX REPLACE "\"" "" COMPILE_TIME ${COMPILE_TIME})
+string(REGEX REPLACE "[\n\t\r]" "" COMPILE_TIME "${COMPILE_TIME}")
+string(REGEX REPLACE "\"" "" COMPILE_TIME "${COMPILE_TIME}")
 
 # 生成版本信息
 set(GIT_VERSION "${CURRENT_BRANCH}_${COMMIT_HASH}_${COMPILE_TIME}")
