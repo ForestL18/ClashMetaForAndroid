@@ -23,7 +23,7 @@ require (
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
 	github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 // indirect
-	github.com/forestl18/mihomo v1.19.29-0.20260716004216-000854441818 // indirect
+	github.com/forestl18/mihomo v1.19.29-0.20260716012439-8d27459fdc1e // indirect
 	github.com/forestl18/sing-tun v0.4.22-0.20260620124931-75c3489632f5 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
@@ -66,8 +66,8 @@ require (
 	github.com/metacubex/hkdf v0.1.0 // indirect
 	github.com/metacubex/hpke v0.1.0 // indirect
 	github.com/metacubex/http v0.1.6 // indirect
-	github.com/metacubex/jls-quic-go v0.0.0-20260712113821-d34e6f9b4c7f // indirect
-	github.com/metacubex/jls-tls v0.0.0-20260712171131-15870a03ac51 // indirect
+	github.com/metacubex/jls-quic-go v0.0.0-20260716020038-12287ee553d3 // indirect
+	github.com/metacubex/jls-tls v0.0.0-20260716010121-e13c4e54a728 // indirect
 	github.com/metacubex/jsonv2 v0.0.0-20260518173308-f4597c22f1df // indirect
 	github.com/metacubex/kcp-go v0.0.0-20260105040817-550693377604 // indirect
 	github.com/metacubex/mhurl v0.1.0 // indirect
