@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/dlclark/regexp2 v1.12.0
-	github.com/forestl18/mihomo v1.19.30-0.20260815031335-800a2872e394
+	github.com/forestl18/mihomo v1.19.30-0.20260821032029-40412fa2812d
 	golang.org/x/sync v0.11.0
 )
 
@@ -22,7 +22,7 @@ require (
 	github.com/coder/websocket v1.8.12 // indirect
 	github.com/coreos/go-iptables v0.8.0 // indirect
 	github.com/dunglas/httpsfv v1.0.2 // indirect
-	github.com/enfein/mieru/v3 v3.35.0 // indirect
+	github.com/enfein/mieru/v3 v3.36.0 // indirect
 	github.com/ericlagergren/aegis v0.0.0-20250325060835-cd0defd64358 // indirect
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
@@ -72,7 +72,7 @@ require (
 	github.com/metacubex/jsonv2 v0.0.0-20260721082349-16b4998c8f89 // indirect
 	github.com/metacubex/kcp-go v0.0.0-20260105040817-550693377604 // indirect
 	github.com/metacubex/mhurl v0.1.0 // indirect
-	github.com/metacubex/mipstack v0.0.0-20260816065001-b7038299fe13 // indirect
+	github.com/metacubex/mipstack v0.0.0-20260820120222-f3276095eefa // indirect
 	github.com/metacubex/mlkem v0.1.0 // indirect
 	github.com/metacubex/nftables v0.0.0-20260426003805-208c2c1ba2cb // indirect
 	github.com/metacubex/qpack v0.6.0 // indirect
@@ -89,7 +89,7 @@ require (
 	github.com/metacubex/sing-wireguard v0.0.0-20260810013230-110eac03c3f0 // indirect
 	github.com/metacubex/smux v0.0.0-20260105030934-d0c8756d3141 // indirect
 	github.com/metacubex/ssh v0.1.0 // indirect
-	github.com/metacubex/tailscale v0.0.0-20260807072706-a4fb5feabcbb // indirect
+	github.com/metacubex/tailscale v0.0.0-20260821002758-7e607643d76d // indirect
 	github.com/metacubex/tailscale-wireguard-go v0.0.0-20260725073821-e61ab99cede2 // indirect
 	github.com/metacubex/tfo-go v0.0.0-20260623020846-376a77860b8c // indirect
 	github.com/metacubex/tls v0.1.8 // indirect
