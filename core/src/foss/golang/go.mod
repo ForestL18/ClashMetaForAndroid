@@ -23,8 +23,8 @@ require (
 	github.com/ericlagergren/polyval v0.0.0-20220411101811-e25bc10ba391 // indirect
 	github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 // indirect
 	github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 // indirect
-	github.com/forestl18/mihomo v1.19.31-0.20260914124059-34fc6d7693c9 // indirect
-	github.com/forestl18/sing-tun v0.4.25-0.20260914123504-10818ecf3a9c // indirect
+	github.com/forestl18/mihomo v1.19.31-0.20260915125112-40e5db6ec4bb // indirect
+	github.com/forestl18/sing-tun v0.4.25-0.20260915124347-994f776e22b7 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
