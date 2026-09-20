@@ -11,10 +11,7 @@ import com.github.kr328.clash.design.AccessControlDesign
 import com.github.kr328.clash.design.model.AppInfo
 import com.github.kr328.clash.design.util.toAppInfo
 import com.github.kr328.clash.service.store.ServiceStore
-import com.github.kr328.clash.util.startClashService
-import com.github.kr328.clash.util.stopClashService
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.selects.select
 import kotlinx.coroutines.withContext
@@ -29,15 +26,7 @@ class AccessControlActivity : BaseActivity<AccessControlDesign>() {
 
         defer {
             withContext(Dispatchers.IO) {
-                val changed = selected != service.accessControlPackages
                 service.accessControlPackages = selected
-                if (clashRunning && changed) {
-                    stopClashService()
-                    while (clashRunning) {
-                        delay(200)
-                    }
-                    startClashService()
-                }
             }
         }
 
