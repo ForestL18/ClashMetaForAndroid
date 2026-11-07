@@ -40,8 +40,8 @@ github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1 h1:tlDMEdcPRQKBE
 github.com/ericlagergren/siv v0.0.0-20220507050439-0b757b3aa5f1/go.mod h1:4RfsapbGx2j/vU5xC/5/9qB3kn9Awp1YDiEnN43QrJ4=
 github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010 h1:fuGucgPk5dN6wzfnxl3D0D3rVLw4v2SbBT9jb4VnxzA=
 github.com/ericlagergren/subtle v0.0.0-20220507045147-890d697da010/go.mod h1:JtBcj7sBuTTRupn7c2bFspMDIObMJsVK8TeUvpShPok=
-github.com/forestl18/sing-tun v0.4.29-0.20261022012847-1c3f60aca09c h1:eBWoB0YjYeSWndQN0etljp0BO5YeIEw/jxORcztZA7I=
-github.com/forestl18/sing-tun v0.4.29-0.20261022012847-1c3f60aca09c/go.mod h1:HjdYN8ZaLyrTZjQr2A6jKiOHkv1t3UNCCmrOeSSy5Hw=
+github.com/forestl18/sing-tun v0.4.30-0.20261107093716-89cd70db704c h1:kzMeHNc4EUQEeV9UF++yJT3KB2QQse/FNOCm5JHgcr4=
+github.com/forestl18/sing-tun v0.4.30-0.20261107093716-89cd70db704c/go.mod h1:0ulCH1P0vVOj+qnoz9PjmgVCLOsoXbHMK8ZPEeItjRs=
 github.com/frankban/quicktest v1.14.6 h1:7Xjx+VpznH+oBnejlPUj8oUpdxnVs4f8XU8WnHkI4W8=
 github.com/fsnotify/fsnotify v1.9.0 h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=
 github.com/fsnotify/fsnotify v1.9.0/go.mod h1:8jBTzvmWwFyi3Pb8djgCCO5IBqzKJ/Jwo8TRcHyHii0=
