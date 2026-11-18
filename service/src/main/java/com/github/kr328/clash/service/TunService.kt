@@ -3,6 +3,7 @@ package com.github.kr328.clash.service
 import android.annotation.TargetApi
 import android.app.PendingIntent
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.ProxyInfo
 import android.net.VpnService
 import android.os.Build
@@ -154,17 +155,29 @@ class TunService : VpnService(), CoroutineScope by CoroutineScope(Dispatchers.De
             }
 
             // Access Control
-            when (store.accessControlMode) {
-                AccessControlMode.AcceptAll -> Unit
-                AccessControlMode.AcceptSelected -> {
-                    (store.accessControlPackages + packageName).forEach {
-                        runCatching { addAllowedApplication(it) }
+            fun addSelectedApps(add: (String) -> Unit): Boolean {
+                var added = false
+                for (pkg in store.accessControlPackages - packageName) {
+                    try {
+                        add(pkg)
+                        added = true
+                    } catch (_: PackageManager.NameNotFoundException) {
+                        // A saved package may have been uninstalled.
                     }
                 }
+                return added
+            }
+
+            when (store.accessControlMode) {
+                AccessControlMode.AcceptAll -> addDisallowedApplication(packageName)
+                AccessControlMode.AcceptSelected -> {
+                    val hasAllowedApp = addSelectedApps { addAllowedApplication(it) }
+                    // With no successful additions, this builder would apply to every app.
+                    check(hasAllowedApp) { "Select at least one installed app for VPN access." }
+                }
                 AccessControlMode.DenySelected -> {
-                    (store.accessControlPackages - packageName).forEach {
-                        runCatching { addDisallowedApplication(it) }
-                    }
+                    addDisallowedApplication(packageName)
+                    addSelectedApps { addDisallowedApplication(it) }
                 }
             }
 
