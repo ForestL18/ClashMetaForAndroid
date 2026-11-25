@@ -15,6 +15,7 @@ import (
 	"cfa/native/delegate"
 	"cfa/native/tunnel"
 
+	"github.com/forestl18/mihomo/component/resolver"
 	"github.com/forestl18/mihomo/log"
 )
 
@@ -36,6 +37,7 @@ func coreInit(home, versionName, gitVersion C.c_string, sdkVersion C.int) {
 
 //export reset
 func reset() {
+	resolver.StoreFakePoolState()
 	config.LoadDefault()
 	tunnel.ResetStatistic()
 	tunnel.CloseAllConnections()
